@@ -2,8 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
+    branches: [claude/verify-github-connection-9PCom]
+     workflow_dispatch:
 
 permissions:
   contents: read
