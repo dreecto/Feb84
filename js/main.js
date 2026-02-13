@@ -17,7 +17,7 @@
       
       // Hero
       heroLabel: 'Plataforma Financiera Segura',
-      heroTitle: 'Cotiza, cobra, y controla tu dinero—todo en un solo lugar',
+      heroTitle: 'Cotiza, cobra, y controla tu dinero <strong>todo en un solo lugar</strong>',
       heroSubtitle: 'Envía cotizaciones, convierte a facturas, recibe pagos, y ve todas tus finanzas conectadas. Entre más la usas, más rápido calificas para tu tarjeta de gasto.',
       heroCta1: 'Descargar App',
       heroCta2: 'Ver Cómo Funciona',
