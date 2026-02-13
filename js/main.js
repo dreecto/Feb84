@@ -87,8 +87,6 @@
       result2Text: 'Ahorradas por semana en cotizaciones, facturas, y papeleo',
       result3Value: '100%',
       result3Text: 'Visibilidad de tu dinero en todas tus cuentas conectadas',
-      result4Value: '0%',
-      result4Text: 'Interés en la tarjeta de gasto—basada en tu flujo real',
       
       // Bilingual
       bilingualLabel: '100% en Español',
@@ -104,7 +102,7 @@
       about2Title: 'Simple y rápido',
       about2Text: 'Estás ocupado. Nuestra app está hecha para ser rápida, simple, y fácil de usar—aunque no seas persona de tecnología. Si sabes enviar textos, puedes usar Banrendi.',
       about3Title: 'No somos un banco',
-      about3Text: 'Somos una plataforma financiera que te ayuda a cotizar, cobrar, y ver tu dinero. Entre más la usas, más rápido calificas para la tarjeta de gasto.',
+      about3Text: 'Somos una plataforma financiera que te ayuda a cotizar, cobrar, y ver tu dinero. Sin sucursales, sin filas, sin papeleo—solo herramientas que funcionan.',
       
       // CTA
       ctaTitle: '¿Listo para hacerte la vida más fácil?',
@@ -231,8 +229,6 @@
       result2Text: 'Saved per week on quotes, invoices, and paperwork',
       result3Value: '100%',
       result3Text: 'Visibility of your money across all connected accounts',
-      result4Value: '0%',
-      result4Text: 'Interest on the spend card—based on your real cash flow',
       
       // Bilingual
       bilingualLabel: '100% Bilingual',
@@ -248,7 +244,7 @@
       about2Title: 'Simple and fast',
       about2Text: "You're busy. Our app is built to be fast, simple, and easy to use—even if you're not a tech person. If you can text, you can use Banrendi.",
       about3Title: "We're not a bank",
-      about3Text: "We're a finance platform that helps you quote, collect, and see your money. The more you use it, the faster you qualify for the spend card.",
+      about3Text: "We're a finance platform that helps you quote, collect, and see your money. No branches, no lines, no paperwork—just tools that work.",
       
       // CTA
       ctaTitle: 'Ready to make your life easier?',
@@ -608,15 +604,13 @@
       if (rLabel) rLabel.textContent = t.resultsLabel;
       if (rTitle) rTitle.textContent = t.resultsTitle;
       
-      if (rCards.length >= 4) {
+      if (rCards.length >= 3) {
         rCards[0].querySelector('.market-stat-number').textContent = t.result1Value;
         rCards[0].querySelector('.market-stat-description').textContent = t.result1Text;
         rCards[1].querySelector('.market-stat-number').textContent = t.result2Value;
         rCards[1].querySelector('.market-stat-description').textContent = t.result2Text;
         rCards[2].querySelector('.market-stat-number').textContent = t.result3Value;
         rCards[2].querySelector('.market-stat-description').textContent = t.result3Text;
-        rCards[3].querySelector('.market-stat-number').textContent = t.result4Value;
-        rCards[3].querySelector('.market-stat-description').textContent = t.result4Text;
       }
     }
     
@@ -800,7 +794,7 @@
       btn.disabled = true;
 
       // Send to FormSubmit.co
-      fetch('https://formsubmit.co/ajax/ec@banendi.com', {
+      fetch('https://formsubmit.co/ajax/ec@banrendi.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
