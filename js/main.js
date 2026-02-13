@@ -781,20 +781,21 @@
       var select = form.querySelector('.cta-select');
       
       var formData = {
+        access_key: '7d8e3428-46b9-497c-878a-4c51b2e6b2da',
         name: inputs[0] ? inputs[0].value : '',
         email: inputs[1] ? inputs[1].value : '',
         company: inputs[2] ? inputs[2].value : '',
         work_type: select ? select.options[select.selectedIndex].text : '',
-        _subject: 'Nueva solicitud de acceso anticipado - Banrendi',
-        _template: 'table'
+        subject: 'Nueva solicitud de acceso anticipado - Banrendi',
+        from_name: 'Banrendi Waitlist'
       };
 
       // Show loading state
       btn.textContent = currentLang === 'es' ? 'Enviando...' : 'Sending...';
       btn.disabled = true;
 
-      // Send to FormSubmit.co
-      fetch('https://formsubmit.co/ajax/ec@banrendi.com', {
+      // Send to Web3Forms
+      fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
