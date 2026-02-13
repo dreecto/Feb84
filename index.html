@@ -1,357 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banrendi — Cotizaciones, Pagos y Reportes para Contratistas</title>
-  <meta name="description" content="Banrendi: plataforma financiera segura para contratistas. Env&iacute;a cotizaciones, cobra con Stripe, conecta tus cuentas con Plaid, y califica para una tarjeta de gasto al 0%.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Feb84</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner container">
-      <a href="#" class="nav-logo">Banrendi</a>
-      <ul class="nav-links">
-        <li><a href="#solutions">C&oacute;mo Funciona</a></li>
-        <li><a href="#market">Resultados</a></li>
-        <li><a href="#about">Por Qu&eacute; Nosotros</a></li>
-        <li><a href="#waitlist">Empezar</a></li>
-      </ul>
-      <div class="nav-actions">
-        <a href="#waitlist" class="btn btn-primary btn-sm">Acceso Anticipado</a>
-      </div>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir men&uacute;">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Feb84</h1>
+            <p>Your next big project starts here</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobile-menu">
-    <ul class="mobile-menu-links">
-      <li><a href="#solutions">C&oacute;mo Funciona</a></li>
-      <li><a href="#market">Resultados</a></li>
-      <li><a href="#about">Por Qu&eacute; Nosotros</a></li>
-      <li><a href="https://rendi.onelink.me/ZhKU/b130ficm" class="btn btn-primary btn-lg">Comenzar</a></li>
-    </ul>
-  </div>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <p class="hero-label">Plataforma Financiera Segura</p>
-        <h1 class="hero-title">Cotiza, cobra, y controla tu dinero—todo en un solo lugar</h1>
-        <p class="hero-subtitle">Env&iacute;a cotizaciones, convierte a facturas, recibe pagos, y ve todas tus finanzas conectadas. Entre m&aacute;s la usas, m&aacute;s r&aacute;pido calificas para tu tarjeta de gasto.</p>
-        <div class="hero-actions">
-          <a href="https://rendi.onelink.me/ZhKU/b130ficm" class="btn btn-primary btn-lg">Descargar App</a>
-          <a href="#solutions" class="btn btn-ghost btn-lg">Ver C&oacute;mo Funciona</a>
-        </div>
-        <div class="hero-partners">
-          <span class="hero-partners-label">Infraestructura segura de</span>
-          <div class="hero-partners-logos">
-            <img src="img/stripe-logo.png" alt="Stripe" class="partner-logo" title="Pagos seguros con Stripe">
-            <span class="partner-separator">+</span>
-            <img src="img/plaid-logo.png" alt="Plaid" class="partner-logo" title="Cuentas conectadas con Plaid">
-          </div>
-          <p class="hero-partners-tagline">Pagos seguros y cuentas conectadas con encriptaci&oacute;n bancaria</p>
-        </div>
-      </div>
-    </div>
-    <div class="hero-gradient"></div>
-  </header>
-
-  <!-- Problem Section -->
-  <section class="section section-light" id="problem">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Te Entendemos</p>
-        <h2 class="section-title">No empezaste tu negocio para hacer papeleo</h2>
-        <p class="section-subtitle">Eres bueno en lo que haces. Pero crear cotizaciones a mano, perseguir pagos, y no saber cu&aacute;nto dinero tienes—eso te frena.</p>
-      </div>
-      <div class="problem-grid">
-        <div class="problem-card">
-          <div class="problem-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/>
-            </svg>
-          </div>
-          <h3>Cotizaciones a mano toman mucho tiempo</h3>
-          <p>Haces cotizaciones en Word o en papel. Cuando hay cambios, tienes que rehacer todo. Y luego convertir a factura es otro dolor de cabeza.</p>
-        </div>
-        <div class="problem-card">
-          <div class="problem-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <h3>Cobrar es un trabajo de tiempo completo</h3>
-          <p>Perseguir cheques, mandar recordatorios, esperar semanas para que te paguen—pasas demasiado tiempo cobrando y no suficiente tiempo construyendo.</p>
-        </div>
-        <div class="problem-card">
-          <div class="problem-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-            </svg>
-          </div>
-          <h3>No sabes cu&aacute;nto dinero tienes</h3>
-          <p>Tu dinero est&aacute; en varios bancos y apps. No tienes idea de tu flujo real, ni cu&aacute;les proyectos te dejan m&aacute;s ganancia. Adivinando no funciona.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Solutions Section -->
-  <section class="section" id="solutions">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">C&oacute;mo Te Ayudamos</p>
-        <h2 class="section-title">Una app para cotizaciones, pagos, reportes y capital</h2>
-      </div>
-
-      <div class="solution-feature">
-        <div class="solution-feature-content">
-          <div class="solution-badge">Cotizaciones y Pagos</div>
-          <h3>De cotizaci&oacute;n a pago, sin fricci&oacute;n</h3>
-          <p>Crea cotizaciones profesionales, actualiza change orders f&aacute;cilmente, y convierte todo a factura con un clic. Tus clientes pagan en l&iacute;nea con Stripe—seguro y r&aacute;pido.</p>
-          <ul class="feature-list">
-            <li>Env&iacute;a cotizaciones profesionales en minutos</li>
-            <li>Actualiza change orders sin rehacer todo</li>
-            <li>Convierte cotizaciones a facturas con un clic</li>
-            <li>Recibe pagos seguros v&iacute;a Stripe</li>
-          </ul>
-        </div>
-        <div class="solution-feature-visual">
-          <div class="feature-card-mock">
-            <div class="mock-header">
-              <span class="mock-dot"></span>
-              <span class="mock-dot"></span>
-              <span class="mock-dot"></span>
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Fast</h3>
+                <p>Lightning-quick performance for your needs</p>
             </div>
-            <div class="mock-content">
-              <div class="mock-row-sm"><span>Cotizaci&oacute;n #247</span></div>
-              <div class="mock-amount">$8,750.00</div>
-              <div class="mock-divider"></div>
-              <div class="mock-row">
-                <span class="mock-label">Remodelaci&oacute;n ba&ntilde;o</span>
-                <span class="mock-value">$6,200</span>
-              </div>
-              <div class="mock-row">
-                <span class="mock-label">Materiales</span>
-                <span class="mock-value">$2,550</span>
-              </div>
-              <div class="mock-divider"></div>
-              <div class="mock-btn">Enviar al Cliente</div>
+            <div class="feature-card">
+                <h3>Secure</h3>
+                <p>Enterprise-grade security built-in</p>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="solution-feature solution-feature-reverse">
-        <div class="solution-feature-content">
-          <div class="solution-badge">Tarjeta de Gasto</div>
-          <h3>Gana acceso a capital mientras usas la app</h3>
-          <p>Entre m&aacute;s usas Banrendi para cotizar y cobrar, m&aacute;s r&aacute;pido calificas para una tarjeta de gasto al 0% de inter&eacute;s. Basada en tu flujo de efectivo real—no en tu puntaje de cr&eacute;dito.</p>
-          <ul class="feature-list">
-            <li>Tarjeta de gasto al 0% de inter&eacute;s</li>
-            <li>L&iacute;mite basado en tus ingresos, no tu FICO</li>
-            <li>Califica m&aacute;s r&aacute;pido mientras usas la app</li>
-            <li>Ayuda con materiales y flujo de efectivo</li>
-          </ul>
-        </div>
-        <div class="solution-feature-visual">
-          <div class="feature-card-mock mock-dark">
-            <div class="mock-header">
-              <span class="mock-dot"></span>
-              <span class="mock-dot"></span>
-              <span class="mock-dot"></span>
+            <div class="feature-card">
+                <h3>Scalable</h3>
+                <p>Grows with your business</p>
             </div>
-            <div class="mock-content">
-              <div class="mock-row-sm"><span>Tarjeta de Gasto Banrendi</span></div>
-              <div class="mock-amount">$15,000</div>
-              <div class="mock-bar">
-                <div class="mock-bar-fill mock-bar-accent" style="width: 25%"></div>
-              </div>
-              <div class="mock-row">
-                <span class="mock-label">Disponible</span>
-                <span class="mock-value">$11,250</span>
-              </div>
-              <div class="mock-row">
-                <span class="mock-label">Inter&eacute;s</span>
-                <span class="mock-value mock-success">0%</span>
-              </div>
-              <div class="mock-btn">Usar Tarjeta</div>
-            </div>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <div class="solution-feature">
-        <div class="solution-feature-content">
-          <div class="solution-badge">Reportes</div>
-          <h3>Todas tus finanzas en un solo lugar</h3>
-          <p>Conecta tus cuentas bancarias, Stripe, Venmo y m&aacute;s con Plaid. Ve todos tus ingresos y gastos en tiempo real. Asigna transacciones a proyectos para saber cu&aacute;les son m&aacute;s rentables.</p>
-          <ul class="feature-list">
-            <li>Conecta todos tus bancos y apps de pago</li>
-            <li>Flujo de efectivo y P&amp;L en tiempo real</li>
-            <li>Asigna gastos a proyectos para ver rentabilidad</li>
-            <li>Preg&uacute;ntale a la IA sobre tu dinero</li>
-          </ul>
-        </div>
-        <div class="solution-feature-visual">
-          <div class="feature-card-mock">
-            <div class="mock-header">
-              <span class="mock-dot"></span>
-              <span class="mock-dot"></span>
-              <span class="mock-dot"></span>
-            </div>
-            <div class="mock-content">
-              <div class="mock-row-sm"><span>Flujo de Efectivo - Junio</span></div>
-              <div class="mock-amount mock-tx-positive">+$18,420</div>
-              <div class="mock-divider"></div>
-              <div class="mock-row">
-                <span class="mock-label">Ingresos</span>
-                <span class="mock-value mock-tx-positive">$52,800</span>
-              </div>
-              <div class="mock-row">
-                <span class="mock-label">Gastos</span>
-                <span class="mock-value">$34,380</span>
-              </div>
-              <div class="mock-divider"></div>
-              <div class="mock-row-sm"><span>Proyecto m&aacute;s rentable</span></div>
-              <div class="mock-row">
-                <span class="mock-label">Remodelaci&oacute;n Cocina</span>
-                <span class="mock-value mock-success">32% margen</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <p>Ready to get started? Contact us today!</p>
+        <button class="cta-button">Contact Us</button>
+    </section>
 
-  <!-- Results Section -->
-  <section class="section" id="market">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Resultados Reales</p>
-        <h2 class="section-title">Lo que est&aacute;n viendo contratistas como t&uacute;</h2>
-      </div>
-      <div class="market-grid">
-        <div class="market-stat-card">
-          <span class="market-stat-number">14 d&iacute;as</span>
-          <span class="market-stat-description">M&aacute;s r&aacute;pido en cobrar comparado con cotizaciones en papel</span>
-        </div>
-        <div class="market-stat-card">
-          <span class="market-stat-number">3 horas</span>
-          <span class="market-stat-description">Ahorradas por semana en cotizaciones, facturas, y papeleo</span>
-        </div>
-        <div class="market-stat-card">
-          <span class="market-stat-number">100%</span>
-          <span class="market-stat-description">Visibilidad de tu dinero en todas tus cuentas conectadas</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    <footer>
+        <p>&copy; 2026 Feb84. All rights reserved.</p>
+    </footer>
 
-  <!-- About / Team Section -->
-  <section class="section section-light" id="about">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Por Qu&eacute; Banrendi</p>
-        <h2 class="section-title">Creamos esto porque hemos estado en tus zapatos</h2>
-        <p class="section-subtitle">Nuestro equipo incluye contratistas, gerentes de construcci&oacute;n, y personas que crecieron en negocios familiares. Sabemos lo que es hacer cotizaciones a mano y esperar semanas para cobrar.</p>
-      </div>
-      <div class="values-grid">
-        <div class="value-card">
-          <h3>Seguridad de nivel bancario</h3>
-          <p>Usamos encriptaci&oacute;n de 256 bits—el mismo nivel de seguridad que usan los bancos. Plaid conecta tus cuentas de forma segura. Tu informaci&oacute;n est&aacute; protegida.</p>
-        </div>
-        <div class="value-card">
-          <h3>Simple y r&aacute;pido</h3>
-          <p>Est&aacute;s ocupado. Nuestra app est&aacute; hecha para ser r&aacute;pida, simple, y f&aacute;cil de usar—aunque no seas persona de tecnolog&iacute;a. Si sabes enviar textos, puedes usar Banrendi.</p>
-        </div>
-        <div class="value-card">
-          <h3>No somos un banco</h3>
-          <p>Somos una plataforma financiera que te ayuda a cotizar, cobrar, y ver tu dinero. Sin sucursales, sin filas, sin papeleo—solo herramientas que funcionan.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA / Waitlist Section -->
-  <section class="section section-cta" id="waitlist">
-    <div class="container">
-      <div class="cta-content">
-        <h2 class="cta-title">&iquest;Listo para hacerte la vida m&aacute;s f&aacute;cil?</h2>
-        <p class="cta-subtitle">&Uacute;nete a la lista de espera y s&eacute; uno de los primeros en probar Banrendi. Pronto abriremos para nuevos contratistas.</p>
-        <form class="cta-form" id="waitlist-form">
-          <div class="cta-form-row">
-            <input type="text" placeholder="Tu nombre" class="cta-input" required>
-            <input type="email" placeholder="Correo electr&oacute;nico" class="cta-input" required>
-          </div>
-          <div class="cta-form-row">
-            <input type="text" placeholder="Nombre de tu empresa" class="cta-input">
-            <select class="cta-input cta-select">
-              <option value="" disabled selected>&iquest;Qu&eacute; tipo de trabajo haces?</option>
-              <option value="general">Contratista General</option>
-              <option value="sub">Subcontratista</option>
-              <option value="specialty">Especialidad (El&eacute;ctrico, Plomer&iacute;a, HVAC)</option>
-              <option value="other">Otro</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg btn-full">Quiero Acceso Anticipado</button>
-          <p class="cta-disclaimer">Solo te escribiremos cuando sea tu turno. Sin spam, nunca.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#" class="footer-logo">Banrendi</a>
-          <p class="footer-tagline">Cotizaciones, pagos, reportes y capital para contratistas.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Producto</h4>
-          <ul>
-            <li><a href="#solutions">Cotizaciones y Pagos</a></li>
-            <li><a href="#solutions">Reportes Financieros</a></li>
-            <li><a href="#solutions">Tarjeta de Gasto</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Empresa</h4>
-          <ul>
-            <li><a href="#about">Por Qu&eacute; Nosotros</a></li>
-            <li><a href="#market">Resultados</a></li>
-            <li><a href="#waitlist">Empezar</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <ul>
-            <li><a href="#">Pol&iacute;tica de Privacidad</a></li>
-            <li><a href="#">T&eacute;rminos de Servicio</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Banrendi. Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
