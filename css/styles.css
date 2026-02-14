@@ -1828,6 +1828,16 @@ h1, h2, h3, h4 {
   .lang-toggle-wrapper {
     flex-wrap: wrap;
     justify-content: center;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-xl);
+  }
+
+  .lang-toggle-label {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: var(--space-xs);
+    font-size: var(--font-size-xs);
   }
 
   .problem-grid {
@@ -1969,9 +1979,33 @@ h1, h2, h3, h4 {
     min-height: 44px;
   }
 
+  .lang-toggle-wrapper {
+    justify-content: center;
+    gap: var(--space-xs);
+  }
+
+  .lang-toggle-label {
+    font-size: var(--font-size-xs);
+  }
+
+  .lang-option {
+    font-size: 11px;
+    padding: var(--space-xs);
+    min-width: 32px;
+    min-height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .lang-toggle {
     min-width: 44px;
-    min-height: 44px;
+    height: 24px;
+  }
+
+  .lang-toggle-thumb {
+    width: 18px;
+    height: 18px;
   }
 
   /* Better spacing for mobile forms */
