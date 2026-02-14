@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Banrendi — Main JavaScript
+   Banrendi | Main JavaScript
    ========================================================================== */
 
 (function () {
@@ -17,10 +17,12 @@
       
       // Hero
       heroLabel: 'Plataforma Financiera Segura',
-      heroTitle: 'Cotiza, cobra, y controla tu dinero <strong>todo en un solo lugar</strong>',
+      heroTitle: 'Cotiza, cobra y controla tu dinero <strong>todo en un solo lugar</strong>',
       heroSubtitle: 'Envía cotizaciones, convierte a facturas, recibe pagos, y ve todas tus finanzas conectadas. Entre más la usas, más rápido calificas para tu tarjeta de gasto.',
       heroCta1: 'Descargar App',
       heroCta2: 'Ver Cómo Funciona',
+      heroPartnersLabel: 'Infraestructura segura de',
+      heroPartnersTagline: 'Pagos seguros y cuentas conectadas con encriptación bancaria',
       heroStat1Value: '256-bit',
       heroStat1Label: 'Encriptación de nivel bancario',
       heroStat2Value: 'Stripe',
@@ -31,11 +33,11 @@
       // Problem
       problemLabel: 'Te Entendemos',
       problemTitle: 'No empezaste tu negocio para hacer papeleo',
-      problemSubtitle: 'Eres bueno en lo que haces. Pero crear cotizaciones a mano, perseguir pagos, y no saber cuánto dinero tienes—eso te frena.',
+      problemSubtitle: 'Eres bueno en lo que haces. Pero crear cotizaciones a mano, perseguir pagos, y no saber cuánto dinero tienes... eso te frena.',
       problem1Title: 'Cotizaciones a mano toman mucho tiempo',
       problem1Text: 'Haces cotizaciones en Word o en papel. Cuando hay cambios, tienes que rehacer todo. Y luego convertir a factura es otro dolor de cabeza.',
       problem2Title: 'Cobrar es un trabajo de tiempo completo',
-      problem2Text: 'Perseguir cheques, mandar recordatorios, esperar semanas para que te paguen—pasas demasiado tiempo cobrando y no suficiente tiempo construyendo.',
+      problem2Text: 'Perseguir cheques, mandar recordatorios, esperar semanas para que te paguen. Pasas demasiado tiempo cobrando y no suficiente tiempo construyendo.',
       problem3Title: 'No sabes cuánto dinero tienes',
       problem3Text: 'Tu dinero está en varios bancos y apps. No tienes idea de tu flujo real, ni cuáles proyectos te dejan más ganancia. Adivinando no funciona.',
       
@@ -45,7 +47,7 @@
       
       solution1Badge: 'Cotizaciones y Pagos',
       solution1Title: 'De cotización a pago, sin fricción',
-      solution1Text: 'Crea cotizaciones profesionales, actualiza change orders fácilmente, y convierte todo a factura con un clic. Tus clientes pagan en línea con Stripe—seguro y rápido.',
+      solution1Text: 'Crea cotizaciones profesionales, actualiza change orders fácilmente, y convierte todo a factura con un clic. Tus clientes pagan en línea con Stripe, seguro y rápido.',
       solution1Feature1: 'Envía cotizaciones profesionales en minutos',
       solution1Feature2: 'Actualiza change orders sin rehacer todo',
       solution1Feature3: 'Convierte cotizaciones a facturas con un clic',
@@ -53,7 +55,7 @@
       
       solution2Badge: 'Tarjeta de Gasto',
       solution2Title: 'Gana acceso a capital mientras usas la app',
-      solution2Text: 'Entre más usas Banrendi para cotizar y cobrar, más rápido calificas para una tarjeta de gasto al 0% de interés. Basada en tu flujo de efectivo real—no en tu puntaje de crédito.',
+      solution2Text: 'Entre más usas Banrendi para cotizar y cobrar, más rápido calificas para una tarjeta de gasto al 0% de interés. Basada en tu flujo de efectivo real, no en tu puntaje de crédito.',
       solution2Feature1: 'Tarjeta de gasto al 0% de interés',
       solution2Feature2: 'Límite basado en tus ingresos, no tu FICO',
       solution2Feature3: 'Califica más rápido mientras usas la app',
@@ -88,9 +90,19 @@
       result3Value: '100%',
       result3Text: 'Visibilidad de tu dinero en todas tus cuentas conectadas',
       
+      // AI Chat
+      aiLabel: 'Rendi IA',
+      aiTitle: 'Pregúntale a la IA sobre tu dinero',
+      aiText: 'Escribe cualquier pregunta sobre tus finanzas y obtén respuestas instantáneas. Funciona en tu celular y en la web.',
+      aiMobile: 'Móvil',
+      aiWeb: 'Web',
+      aiUserMsg: '¿Qué tan cerca estoy de mi meta de ingresos este mes?',
+      aiBotIntro: 'Analizando tus ingresos de los últimos 3 meses:',
+      aiBotInsight: 'Vas al <strong>68%</strong> de tu meta mensual. Necesitas <strong>$1,200</strong> más para alcanzarla.',
+      
       // Bilingual
       bilingualLabel: '100% en Español',
-      bilingualTitle: 'Cotizaciones, facturas y reportes—en tu idioma',
+      bilingualTitle: 'Cotizaciones, facturas y reportes en tu idioma',
       bilingualText: 'Toda la app funciona en español. Tus cotizaciones salen profesionales. Tus clientes reciben facturas claras. Y tú entiendes cada número en tus reportes.',
       
       // About
@@ -98,11 +110,11 @@
       aboutTitle: 'Creamos esto porque hemos estado en tus zapatos',
       aboutSubtitle: 'Nuestro equipo incluye contratistas, gerentes de construcción, y personas que crecieron en negocios familiares. Sabemos lo que es hacer cotizaciones a mano y esperar semanas para cobrar.',
       about1Title: 'Seguridad de nivel bancario',
-      about1Text: 'Usamos encriptación de 256 bits—el mismo nivel de seguridad que usan los bancos. Plaid conecta tus cuentas de forma segura. Tu información está protegida.',
+      about1Text: 'Usamos encriptación de 256 bits, el mismo nivel de seguridad que usan los bancos. Plaid conecta tus cuentas de forma segura. Tu información está protegida.',
       about2Title: 'Simple y rápido',
-      about2Text: 'Estás ocupado. Nuestra app está hecha para ser rápida, simple, y fácil de usar—aunque no seas persona de tecnología. Si sabes enviar textos, puedes usar Banrendi.',
+      about2Text: 'Estás ocupado. Nuestra app está hecha para ser rápida, simple, y fácil de usar, aunque no seas persona de tecnología. Si sabes enviar textos, puedes usar Banrendi.',
       about3Title: 'No somos un banco',
-      about3Text: 'Somos una plataforma financiera que te ayuda a cotizar, cobrar, y ver tu dinero. Sin sucursales, sin filas, sin papeleo—solo herramientas que funcionan.',
+      about3Text: 'Somos una plataforma financiera que te ayuda a cotizar, cobrar, y ver tu dinero. Sin sucursales, sin filas, sin papeleo. Solo herramientas que funcionan.',
       
       // CTA
       ctaTitle: '¿Listo para hacerte la vida más fácil?',
@@ -159,10 +171,12 @@
       
       // Hero
       heroLabel: 'Secure Finance Platform',
-      heroTitle: 'Quote, get paid, and track your money—all in one place',
+      heroTitle: 'Quote, get paid, and track your money <strong>all in one place</strong>',
       heroSubtitle: 'Send quotes, convert to invoices, receive payments, and see all your finances connected. The more you use it, the faster you qualify for your spend card.',
       heroCta1: 'Download App',
       heroCta2: 'See How It Works',
+      heroPartnersLabel: 'Secure infrastructure by',
+      heroPartnersTagline: 'Secure payments and connected accounts with bank-level encryption',
       heroStat1Value: '256-bit',
       heroStat1Label: 'Bank-level encryption',
       heroStat2Value: 'Stripe',
@@ -173,11 +187,11 @@
       // Problem
       problemLabel: 'We Get It',
       problemTitle: "You didn't start your business to do paperwork",
-      problemSubtitle: "You're great at what you do. But creating quotes by hand, chasing payments, and not knowing how much money you have—that's holding you back.",
+      problemSubtitle: "You're great at what you do. But creating quotes by hand, chasing payments, and not knowing how much money you have... that's holding you back.",
       problem1Title: 'Manual quotes take forever',
       problem1Text: "You make quotes in Word or on paper. When there are changes, you have to redo everything. And converting to invoice is another headache.",
       problem2Title: 'Getting paid is a full-time job',
-      problem2Text: "Chasing checks, sending reminders, waiting weeks to get paid—you spend too much time collecting and not enough time building.",
+      problem2Text: "Chasing checks, sending reminders, waiting weeks to get paid. You spend too much time collecting and not enough time building.",
       problem3Title: "You don't know how much money you have",
       problem3Text: "Your money is in multiple banks and apps. You have no idea of your real cash flow, or which projects are most profitable. Guessing doesn't work.",
       
@@ -187,7 +201,7 @@
       
       solution1Badge: 'Quotes & Payments',
       solution1Title: 'From quote to payment, no friction',
-      solution1Text: 'Create professional quotes, update change orders easily, and convert everything to invoice with one click. Your clients pay online with Stripe—secure and fast.',
+      solution1Text: 'Create professional quotes, update change orders easily, and convert everything to invoice with one click. Your clients pay online with Stripe, secure and fast.',
       solution1Feature1: 'Send professional quotes in minutes',
       solution1Feature2: 'Update change orders without redoing everything',
       solution1Feature3: 'Convert quotes to invoices with one click',
@@ -195,7 +209,7 @@
       
       solution2Badge: 'Spend Card',
       solution2Title: 'Earn access to capital while using the app',
-      solution2Text: 'The more you use Banrendi to quote and collect, the faster you qualify for a 0% interest spend card. Based on your real cash flow—not your credit score.',
+      solution2Text: 'The more you use Banrendi to quote and collect, the faster you qualify for a 0% interest spend card. Based on your real cash flow, not your credit score.',
       solution2Feature1: '0% interest spend card',
       solution2Feature2: 'Limit based on your income, not your FICO',
       solution2Feature3: 'Qualify faster as you use the app',
@@ -230,9 +244,19 @@
       result3Value: '100%',
       result3Text: 'Visibility of your money across all connected accounts',
       
+      // AI Chat
+      aiLabel: 'Rendi AI',
+      aiTitle: 'Ask AI about your money',
+      aiText: 'Type any question about your finances and get instant answers. Works on your phone and on the web.',
+      aiMobile: 'Mobile',
+      aiWeb: 'Web',
+      aiUserMsg: 'How close am I to my income goal this month?',
+      aiBotIntro: 'Analyzing your income from the last 3 months:',
+      aiBotInsight: "You're at <strong>68%</strong> of your monthly goal. You need <strong>$1,200</strong> more to reach it.",
+      
       // Bilingual
       bilingualLabel: '100% Bilingual',
-      bilingualTitle: 'Quotes, invoices and reports—in your language',
+      bilingualTitle: 'Quotes, invoices and reports in your language',
       bilingualText: 'The entire app works in English and Spanish. Your quotes look professional. Your clients receive clear invoices. And you understand every number in your reports.',
       
       // About
@@ -240,11 +264,11 @@
       aboutTitle: "We built this because we've been in your shoes",
       aboutSubtitle: 'Our team includes contractors, construction managers, and people who grew up in family businesses. We know what it\'s like to make quotes by hand and wait weeks to get paid.',
       about1Title: 'Bank-level security',
-      about1Text: 'We use 256-bit encryption—the same level of security that banks use. Plaid connects your accounts securely. Your information is protected.',
+      about1Text: 'We use 256-bit encryption, the same level of security that banks use. Plaid connects your accounts securely. Your information is protected.',
       about2Title: 'Simple and fast',
-      about2Text: "You're busy. Our app is built to be fast, simple, and easy to use—even if you're not a tech person. If you can text, you can use Banrendi.",
+      about2Text: "You're busy. Our app is built to be fast, simple, and easy to use, even if you're not a tech person. If you can text, you can use Banrendi.",
       about3Title: "We're not a bank",
-      about3Text: "We're a finance platform that helps you quote, collect, and see your money. No branches, no lines, no paperwork—just tools that work.",
+      about3Text: "We're a finance platform that helps you quote, collect, and see your money. No branches, no lines, no paperwork. Just tools that work.",
       
       // CTA
       ctaTitle: 'Ready to make your life easier?',
@@ -440,7 +464,8 @@
       '.step-card',
       '.market-stat-card',
       '.value-card',
-      '.section-header'
+      '.section-header',
+      '.ai-feature-content'
     ];
 
     fadeSelectors.forEach(function (selector) {
@@ -458,7 +483,7 @@
     });
 
     // Slide in from right (visual sections)
-    document.querySelectorAll('.solution-feature-visual').forEach(function(el) {
+    document.querySelectorAll('.solution-feature-visual, .ai-feature-visual').forEach(function(el) {
       el.classList.add('slide-in-right');
     });
 
@@ -539,7 +564,28 @@
     var heroStats = document.querySelectorAll('.hero-stat');
     
     if (heroLabel) heroLabel.textContent = t.heroLabel;
-    if (heroTitle) heroTitle.textContent = t.heroTitle;
+    if (heroTitle) {
+      // Re-apply word splitting for animation
+      var text = t.heroTitle;
+      var parts = text.split(/(<strong>.*?<\/strong>)/);
+      var wrappedHtml = parts.map(function(part) {
+        if (part.startsWith('<strong>')) {
+          var innerText = part.replace(/<\/?strong>/g, '');
+          var words = innerText.split(/\s+/);
+          var wrappedWords = words.map(function(word) {
+            return '<span class="word" style="opacity:1;transform:none;filter:none;">' + word + '</span>';
+          }).join(' ');
+          return '<strong>' + wrappedWords + '</strong>';
+        } else {
+          var words = part.split(/\s+/).filter(function(w) { return w.length > 0; });
+          return words.map(function(word) {
+            return '<span class="word" style="opacity:1;transform:none;filter:none;">' + word + '</span>';
+          }).join(' ');
+        }
+      }).join(' ');
+      heroTitle.innerHTML = wrappedHtml;
+      heroTitle.classList.add('animate');
+    }
     if (heroSubtitle) heroSubtitle.textContent = t.heroSubtitle;
     if (heroCtaBtns.length >= 2) {
       heroCtaBtns[0].textContent = t.heroCta1;
@@ -553,6 +599,12 @@
       heroStats[2].querySelector('.hero-stat-value').textContent = t.heroStat3Value;
       heroStats[2].querySelector('.hero-stat-label').textContent = t.heroStat3Label;
     }
+    
+    // Hero partners
+    var heroPartnersLabel = document.querySelector('.hero-partners-label');
+    var heroPartnersTagline = document.querySelector('.hero-partners-tagline');
+    if (heroPartnersLabel) heroPartnersLabel.textContent = t.heroPartnersLabel;
+    if (heroPartnersTagline) heroPartnersTagline.textContent = t.heroPartnersTagline;
     
     // Problem section
     var problemSection = document.getElementById('problem');
@@ -712,6 +764,29 @@
         rCards[2].querySelector('.market-stat-number').textContent = t.result3Value;
         rCards[2].querySelector('.market-stat-description').textContent = t.result3Text;
       }
+    }
+    
+    // AI Chat
+    var aiSection = document.getElementById('ai-chat');
+    if (aiSection) {
+      var aiLabel = aiSection.querySelector('.section-label');
+      var aiTitle = aiSection.querySelector('.section-title');
+      var aiText = aiSection.querySelector('.ai-feature-text');
+      var aiPlatforms = aiSection.querySelectorAll('.ai-platform');
+      var aiUserMsg = aiSection.querySelector('.ai-message-user p');
+      var aiBotIntro = aiSection.querySelector('.ai-response > p:first-child');
+      var aiBotInsight = aiSection.querySelector('.ai-insight');
+      
+      if (aiLabel) aiLabel.textContent = t.aiLabel;
+      if (aiTitle) aiTitle.textContent = t.aiTitle;
+      if (aiText) aiText.textContent = t.aiText;
+      if (aiPlatforms.length >= 2) {
+        aiPlatforms[0].lastChild.textContent = ' ' + t.aiMobile;
+        aiPlatforms[1].lastChild.textContent = ' ' + t.aiWeb;
+      }
+      if (aiUserMsg) aiUserMsg.textContent = t.aiUserMsg;
+      if (aiBotIntro) aiBotIntro.textContent = t.aiBotIntro;
+      if (aiBotInsight) aiBotInsight.innerHTML = t.aiBotInsight;
     }
     
     // Bilingual
