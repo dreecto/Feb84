@@ -753,6 +753,18 @@ h1, h2, h3, h4 {
   margin-bottom: var(--space-lg);
 }
 
+.badge-coming-soon {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--color-gray-55);
+  background: rgba(0, 0, 0, 0.05);
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 6px;
+  letter-spacing: 0.05em;
+}
+
 .solution-feature-content h3 {
   font-size: var(--font-size-2xl);
   margin-bottom: var(--space-md);
@@ -1434,29 +1446,34 @@ h1, h2, h3, h4 {
 
 /* ---------- Values / About ---------- */
 .values-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-lg);
+  display: flex;
+  justify-content: center;
 }
 
 .value-card {
-  padding: var(--space-xl);
+  max-width: 700px;
+  padding: var(--space-2xl);
   background: var(--color-white);
   border-radius: var(--border-radius-lg);
   border: 1px solid var(--color-gray-13);
+  text-align: center;
 }
 
-.value-card h3 {
-  font-size: var(--font-size-md);
-  font-weight: 500;
-  margin-bottom: var(--space-sm);
-  color: var(--color-black);
+.value-card .section-label {
+  display: inline-block;
+  margin-bottom: var(--space-md);
 }
 
-.value-card p {
-  font-size: var(--font-size-sm);
-  color: var(--color-gray-55);
+.value-card .section-title {
+  margin-bottom: var(--space-lg);
+  font-size: var(--font-size-2xl);
+}
+
+.value-card p:last-child {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-75);
   line-height: 1.6;
+  margin: 0;
 }
 
 /* ---------- CTA / Waitlist ---------- */
