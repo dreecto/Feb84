@@ -107,7 +107,7 @@
       
       // About
       aboutLabel: 'Por Qué Banrendi',
-      aboutTitle: 'Creamos esto porque hemos estado en tus zapatos',
+      aboutTitle: 'Creamos Banrendi porque entendemos lo que significa ser contratista y hacer crecer tu negocio',
       aboutSubtitle: 'Nuestro equipo incluye contratistas, gerentes de construcción, y personas que crecieron en negocios familiares. Sabemos lo que es hacer cotizaciones a mano y esperar semanas para cobrar.',
       about1Title: 'Seguridad de nivel bancario',
       about1Text: 'Usamos encriptación de 256 bits, el mismo nivel de seguridad que usan los bancos. Plaid conecta tus cuentas de forma segura. Tu información está protegida.',
