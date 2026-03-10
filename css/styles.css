@@ -393,10 +393,9 @@ h1, h2, h3, h4 {
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  align-items: start;
-  gap: var(--space-4xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: linear-gradient(
     to bottom,
     #ffffff 0%,
@@ -405,10 +404,8 @@ h1, h2, h3, h4 {
     #d0e7f6 75%,
     #bddff3 100%
   );
-  padding: calc(var(--nav-height) + var(--space-2xl)) var(--space-2xl) 0;
+  padding: calc(var(--nav-height) + var(--space-2xl)) max(var(--space-2xl), calc((100vw - var(--container-max)) / 2)) var(--space-4xl);
   overflow: visible;
-  max-width: var(--container-max);
-  margin: 0 auto;
   min-height: calc(100vh - var(--nav-height));
   -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
@@ -472,11 +469,11 @@ h1, h2, h3, h4 {
   position: relative;
   z-index: 1;
   width: 100%;
-  order: 1;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   padding-top: var(--space-xl);
   padding-bottom: var(--space-4xl);
 }
@@ -693,6 +690,35 @@ h1, h2, h3, h4 {
   color: var(--color-gray-55);
   font-size: var(--font-size-lg);
   font-weight: 300;
+}
+
+/* ---------- Hero Divider ---------- */
+.hero-divider {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hero-divider-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
 
 /* ---------- Sections ---------- */
@@ -1668,6 +1694,74 @@ h1, h2, h3, h4 {
   font-size: var(--font-size-sm);
   color: var(--color-gray-55);
   margin-bottom: var(--space-xl);
+}
+
+/* ---------- Mission Section ---------- */
+.section-mission {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mission-inner {
+  position: relative;
+  width: 100%;
+  height: 520px;
+}
+
+.mission-image-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.mission-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+.mission-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(3, 3, 3, 0.72) 0%,
+    rgba(3, 3, 3, 0.45) 50%,
+    rgba(3, 3, 3, 0.15) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-4xl) var(--space-3xl);
+}
+
+.mission-title {
+  font-size: clamp(2rem, 5vw, var(--font-size-4xl));
+  font-weight: 400;
+  color: var(--color-white);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .mission-inner {
+    height: 400px;
+  }
+
+  .mission-overlay {
+    padding: var(--space-2xl) var(--space-lg);
+    background: linear-gradient(
+      to top,
+      rgba(3, 3, 3, 0.78) 0%,
+      rgba(3, 3, 3, 0.4) 50%,
+      rgba(3, 3, 3, 0.1) 100%
+    );
+  }
 }
 
 /* ---------- Footer ---------- */
