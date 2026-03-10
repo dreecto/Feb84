@@ -145,6 +145,9 @@
       footerLegal2: 'Términos de Servicio',
       footerCopy: '© 2026 Banrendi. Todos los derechos reservados.',
       
+      // Mission
+      missionTitle: 'Nuestra misión es tu éxito',
+      
       // Mock UI
       mockQuoteLabel: 'Cotización #247',
       mockQuoteItem1: 'Remodelación baño',
@@ -299,6 +302,9 @@
       footerLegal2: 'Terms of Service',
       footerCopy: '© 2026 Banrendi. All rights reserved.',
       
+      // Mission
+      missionTitle: 'Our mission is your success',
+      
       // Mock UI
       mockQuoteLabel: 'Quote #247',
       mockQuoteItem1: 'Bathroom remodel',
@@ -323,17 +329,6 @@
   var nav = document.getElementById('nav');
   var navToggle = document.getElementById('nav-toggle');
   var mobileMenu = document.getElementById('mobile-menu');
-
-  function handleNavScroll() {
-    if (window.scrollY > 40) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-  }
-
-  window.addEventListener('scroll', handleNavScroll, { passive: true });
-  handleNavScroll();
 
   // ---- Mobile menu toggle ----
   if (navToggle && mobileMenu) {
@@ -547,20 +542,21 @@
     if (navCtaBtn) navCtaBtn.textContent = t.navCta;
     
     // Mobile nav
-    var mobileLinks = document.querySelectorAll('.mobile-menu-links a:not(.btn)');
-    if (mobileLinks.length >= 3) {
+    var mobileLinks = document.querySelectorAll('.mobile-menu-links a');
+    if (mobileLinks.length >= 4) {
       mobileLinks[0].textContent = t.navLink1;
       mobileLinks[1].textContent = t.navLink2;
       mobileLinks[2].textContent = t.navLink3;
+      mobileLinks[3].textContent = t.navLink4;
     }
-    var mobileCta = document.querySelector('.mobile-menu-links .btn');
+    var mobileCta = document.querySelector('.mobile-menu-cta');
     if (mobileCta) mobileCta.textContent = t.navCta;
     
     // Hero
     var heroLabel = document.querySelector('.hero-label');
     var heroTitle = document.querySelector('.hero-title');
     var heroSubtitle = document.querySelector('.hero-subtitle');
-    var heroCtaBtns = document.querySelectorAll('.hero-actions .btn');
+    var heroCtaBtn = document.querySelector('.hero-cta');
     var heroStats = document.querySelectorAll('.hero-stat');
     
     if (heroLabel) heroLabel.textContent = t.heroLabel;
@@ -587,10 +583,7 @@
       heroTitle.classList.add('animate');
     }
     if (heroSubtitle) heroSubtitle.textContent = t.heroSubtitle;
-    if (heroCtaBtns.length >= 2) {
-      heroCtaBtns[0].textContent = t.heroCta1;
-      heroCtaBtns[1].textContent = t.heroCta2;
-    }
+    if (heroCtaBtn) heroCtaBtn.textContent = t.heroCta1;
     if (heroStats.length >= 3) {
       heroStats[0].querySelector('.hero-stat-value').textContent = t.heroStat1Value;
       heroStats[0].querySelector('.hero-stat-label').textContent = t.heroStat1Label;
@@ -853,6 +846,10 @@
       if (cBtn) cBtn.textContent = t.ctaButton;
       if (cDisclaimer) cDisclaimer.textContent = t.ctaDisclaimer;
     }
+    
+    // Mission
+    var missionTitle = document.querySelector('.mission-title');
+    if (missionTitle) missionTitle.textContent = t.missionTitle;
     
     // Footer
     var footer = document.querySelector('.footer');

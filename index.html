@@ -17,65 +17,66 @@
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav-inner container">
-      <a href="#" class="nav-logo"><img src="img/banrendi-logo.png" alt="Banrendi" class="nav-logo-img"></a>
-      <ul class="nav-links">
+      <a href="#" class="nav-logo"><img src="img/sumi-logo.png" alt="SUMI" class="nav-logo-img"></a>
+      <div class="nav-menu-trigger">
+        <span class="nav-menu-label">MENU</span>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir men&uacute;">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <ul class="mobile-menu-links">
         <li><a href="#solutions">C&oacute;mo Funciona</a></li>
         <li><a href="#market">Resultados</a></li>
         <li><a href="#about">Por Qu&eacute; Nosotros</a></li>
         <li><a href="#waitlist">Empezar</a></li>
       </ul>
-      <div class="nav-actions">
-        <a href="https://rendi.onelink.me/ZhKU/b130ficm" class="btn btn-primary btn-sm">Descargar App</a>
-      </div>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir men&uacute;">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <a href="https://rendi.onelink.me/ZhKU/b130ficm" class="btn btn-primary btn-lg mobile-menu-cta">Descargar App</a>
     </div>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobile-menu">
-    <ul class="mobile-menu-links">
-      <li><a href="#solutions">C&oacute;mo Funciona</a></li>
-      <li><a href="#market">Resultados</a></li>
-      <li><a href="#about">Por Qu&eacute; Nosotros</a></li>
-      <li><a href="https://rendi.onelink.me/ZhKU/b130ficm" class="btn btn-primary btn-lg">Descargar App</a></li>
-    </ul>
   </div>
 
   <!-- Hero Section -->
   <header class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <p class="hero-label">Plataforma Financiera Segura</p>
-        <h1 class="hero-title">Cotiza, cobra y controla tu dinero <strong>todo en un solo lugar</strong></h1>
-        <p class="hero-subtitle">Env&iacute;a cotizaciones, cobra, y ve todas tus finanzas en un solo lugar.</p>
-        <div class="hero-actions">
-          <a href="https://rendi.onelink.me/ZhKU/b130ficm" class="btn btn-primary btn-lg">Descargar App</a>
-          <a href="#solutions" class="btn btn-ghost btn-lg">Ver C&oacute;mo Funciona</a>
+    <div class="hero-content">
+      <!-- Social proof pill -->
+      <div class="hero-social-proof">
+        <div class="hero-avatars">
+          <span class="hero-avatar"></span>
+          <span class="hero-avatar"></span>
+          <span class="hero-avatar"></span>
         </div>
-        <div class="lang-toggle-wrapper">
-          <span class="lang-toggle-label">We're bilingual</span>
-          <span class="lang-option" data-lang="en">EN</span>
-          <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
-            <span class="lang-toggle-thumb"></span>
-          </button>
-          <span class="lang-option lang-active" data-lang="es">ES</span>
-        </div>
-        <div class="hero-partners">
-          <span class="hero-partners-label">Infraestructura segura de</span>
-          <div class="hero-partners-logos">
-            <img src="img/stripe-logo.png" alt="Stripe" class="partner-logo" title="Pagos seguros con Stripe">
-            <span class="partner-separator">+</span>
-            <img src="img/plaid-logo.png" alt="Plaid" class="partner-logo" title="Cuentas conectadas con Plaid">
-          </div>
-          <p class="hero-partners-tagline">Pagos seguros y cuentas conectadas con encriptaci&oacute;n bancaria</p>
+        <span class="hero-social-proof-text">M&aacute;s de 500 contratistas confían en nosotros</span>
+      </div>
+
+      <h1 class="hero-title">Cotiza, cobra y controla tu dinero <strong>en un solo lugar</strong></h1>
+      <p class="hero-subtitle">Env&iacute;a cotizaciones, cobra con Stripe, y ve todas tus finanzas conectadas. Todo desde una sola app.</p>
+
+      <a href="https://rendi.onelink.me/ZhKU/b130ficm" class="hero-cta">Descargar App</a>
+
+      <div class="lang-toggle-wrapper">
+        <span class="lang-toggle-label">We're bilingual</span>
+        <span class="lang-option" data-lang="en">EN</span>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+          <span class="lang-toggle-thumb"></span>
+        </button>
+        <span class="lang-option lang-active" data-lang="es">ES</span>
+      </div>
+
+      <div class="hero-partners">
+        <span class="hero-partners-label">Infraestructura segura de</span>
+        <div class="hero-partners-logos">
+          <img src="img/stripe-logo.png" alt="Stripe" class="partner-logo" title="Pagos seguros con Stripe">
+          <span class="partner-separator">+</span>
+          <img src="img/plaid-logo.png" alt="Plaid" class="partner-logo" title="Cuentas conectadas con Plaid">
         </div>
       </div>
     </div>
-    <div class="hero-gradient"></div>
   </header>
 
   <!-- Solutions Section -->
@@ -189,6 +190,11 @@
     </div>
   </section>
 
+  <!-- Full-Width Image -->
+  <div class="hero-divider">
+    <img src="img/roofer-hero.webp" alt="Professional roofer at work" class="hero-divider-image">
+  </div>
+
   <!-- AI Chat Feature Section -->
   <section class="section section-ai" id="ai-chat">
     <div class="container">
@@ -268,6 +274,18 @@
         <p class="cta-trades-label">Para techadores, plomeros, electricistas, pintores y m&aacute;s</p>
         <h2 class="cta-title">&iquest;Listo para hacerte la vida m&aacute;s f&aacute;cil?</h2>
         <a href="https://rendi.onelink.me/ZhKU/b130ficm" class="btn btn-primary btn-lg">Descargar App</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="section-mission">
+    <div class="mission-inner">
+      <div class="mission-image-wrap">
+        <img src="img/general-contractor.jpg" alt="Contratista profesional" class="mission-image" />
+      </div>
+      <div class="mission-overlay">
+        <h2 class="mission-title">Nuestra misi&oacute;n es tu &eacute;xito</h2>
       </div>
     </div>
   </section>
