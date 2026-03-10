@@ -145,6 +145,9 @@
       footerLegal2: 'Términos de Servicio',
       footerCopy: '© 2026 Banrendi. Todos los derechos reservados.',
       
+      // Mission
+      missionTitle: 'Nuestra misión es tu éxito',
+      
       // Mock UI
       mockQuoteLabel: 'Cotización #247',
       mockQuoteItem1: 'Remodelación baño',
@@ -298,6 +301,9 @@
       footerLegal1: 'Privacy Policy',
       footerLegal2: 'Terms of Service',
       footerCopy: '© 2026 Banrendi. All rights reserved.',
+      
+      // Mission
+      missionTitle: 'Our mission is your success',
       
       // Mock UI
       mockQuoteLabel: 'Quote #247',
@@ -840,6 +846,10 @@
       if (cBtn) cBtn.textContent = t.ctaButton;
       if (cDisclaimer) cDisclaimer.textContent = t.ctaDisclaimer;
     }
+    
+    // Mission
+    var missionTitle = document.querySelector('.mission-title');
+    if (missionTitle) missionTitle.textContent = t.missionTitle;
     
     // Footer
     var footer = document.querySelector('.footer');
