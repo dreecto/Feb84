@@ -405,8 +405,8 @@ h1, h2, h3, h4 {
     #d0e7f6 75%,
     #bddff3 100%
   );
-  padding: calc(var(--nav-height) + var(--space-2xl)) max(var(--space-2xl), calc((100vw - var(--container-max)) / 2)) var(--space-4xl);
-  overflow: visible;
+  padding: calc(var(--nav-height) + var(--space-4xl)) max(var(--space-2xl), calc((100vw - var(--container-max)) / 2)) var(--space-4xl);
+  overflow: hidden;
   min-height: calc(100vh - var(--nav-height));
   -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
@@ -703,36 +703,21 @@ h1, h2, h3, h4 {
 
 .hero-divider-image {
   width: 100%;
-  height: auto;
-  min-height: 300px;
+  height: 520px;
   display: block;
   object-fit: cover;
   object-position: center center;
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    black 10%,
-    black 90%,
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    black 10%,
-    black 90%,
-    transparent 100%
-  );
 }
 
 @media (max-width: 768px) {
   .hero-divider-image {
-    min-height: 260px;
+    height: 400px;
   }
 }
 
 @media (max-width: 480px) {
   .hero-divider-image {
-    min-height: 220px;
+    height: 400px;
   }
 }
 
@@ -2069,6 +2054,7 @@ h1, h2, h3, h4 {
     gap: 0;
     padding: calc(var(--nav-height) + var(--space-xs)) var(--space-lg) var(--space-2xl);
     text-align: center;
+    min-height: auto;
   }
 
   .hero-content {
