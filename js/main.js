@@ -16,7 +16,7 @@
       navCta: 'Acceso Anticipado',
 
       // Hero
-      heroSocialProof: 'Próximamente: Una tarjeta de gasto basada en tus finanzas, no en tu puntaje de crédito.',
+      heroSocialProof: 'Próximamente: Una tarjeta de gasto basada en tus números, no en tu crédito',
       heroLabel: 'Plataforma Financiera Segura',
       heroTitle: 'Ayudamos a contratistas a crecer sus negocios.',
       heroSubtitle: 'Envía cotizaciones, cobra, y controla tu dinero todo en un solo lugar.',
@@ -63,8 +63,8 @@
       solution2Feature4: 'Ayuda con materiales y flujo de efectivo',
       
       solution3Badge: 'Reportes',
-      solution3Title: 'Los contadores tardan días en responder a tus preguntas, Banrendi responde instantáneamente.',
-      solution3Text: 'Conecta tus cuentas bancarias, Stripe, Venmo y más con Plaid. Ve todos tus ingresos y gastos en tiempo real. Asigna transacciones a proyectos para saber cuáles son más rentables.',
+      solution3Title: 'Tus reportes financieros están listos. Siempre.',
+      solution3Text: 'Conecta tus cuentas bancarias y Banrendi rastrea tus proyectos para que puedas ver cómo están funcionando. Ve ingresos, gastos, flujo de efectivo y P&L para tu negocio, 24/7. Nunca estés en la oscuridad.',
       solution3Feature1: 'Conecta todos tus bancos y apps de pago',
       solution3Feature2: 'Flujo de efectivo y P&L en tiempo real',
       solution3Feature3: 'Asigna gastos a proyectos para ver rentabilidad',
@@ -177,7 +177,7 @@
       navCta: 'Early Access',
 
       // Hero
-      heroSocialProof: 'Coming soon: A spend card based on your finances, not your credit score.',
+      heroSocialProof: 'Soon: A spend card based on your numbers not your credit',
       heroLabel: 'Secure Finance Platform',
       heroTitle: 'We help contractors grow their businesses.',
       heroSubtitle: 'Send quotes, get paid, and track your money all in one place.',
@@ -224,8 +224,8 @@
       solution2Feature4: 'Help with materials and cash flow',
       
       solution3Badge: 'Reports',
-      solution3Title: 'Bookkeepers take days to respond to your questions, Banrendi responds instantly.',
-      solution3Text: 'Connect your bank accounts, Stripe, Venmo and more with Plaid. See all your income and expenses in real time. Assign transactions to projects to see which are most profitable.',
+      solution3Title: 'Your financial reports are done. Always.',
+      solution3Text: 'Connect your bank accounts and Banrendi tracks your projects so you can see how they're performing. View income, expenses, cash flow and P&L for your business, 24/7. Never be in the dark.',
       solution3Feature1: 'Connect all your banks and payment apps',
       solution3Feature2: 'Cash flow and P&L in real time',
       solution3Feature3: 'Assign expenses to projects for profitability',
