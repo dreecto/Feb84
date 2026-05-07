@@ -4,7 +4,7 @@ Embedded finance for the $130B Hispanic construction economy.
 
 ## About
 
-Banrendi provides purpose-built financial tools — payments, lending, and banking — for Hispanic-owned construction businesses. Fully bilingual, designed for construction workflows.
+Banrendi provides purpose-built financial tools — payments, lending, and insights — for Hispanic-owned construction businesses. Fully bilingual, designed for construction workflows.
 
 ## Running Locally
 
