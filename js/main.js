@@ -14,14 +14,15 @@
       navLink3: 'Por Qué Nosotros',
       navLink4: 'Empezar',
       navCta: 'Acceso Anticipado',
-      
+
       // Hero
+      heroSocialProof: 'Próximamente: Una tarjeta de gasto basada en tus finanzas, no en tu puntaje de crédito.',
       heroLabel: 'Plataforma Financiera Segura',
-      heroTitle: 'Cotiza, cobra y controla tu dinero <strong>todo en un solo lugar</strong>',
-      heroSubtitle: 'Envía cotizaciones, convierte a facturas, recibe pagos, y ve todas tus finanzas conectadas. Entre más la usas, más rápido calificas para tu tarjeta de gasto.',
+      heroTitle: 'Ayudamos a contratistas a crecer sus negocios.',
+      heroSubtitle: 'Envía cotizaciones, cobra, y controla tu dinero todo en un solo lugar.',
       heroCta1: 'Descargar App',
       heroCta2: 'Ver Cómo Funciona',
-      heroPartnersLabel: 'Infraestructura segura de',
+      heroPartnersLabel: 'Infraestructura Segura Impulsada Por',
       heroPartnersTagline: 'Pagos seguros y cuentas conectadas con encriptación bancaria',
       heroStat1Value: '256-bit',
       heroStat1Label: 'Encriptación de nivel bancario',
@@ -43,7 +44,7 @@
       
       // Solutions
       solutionsLabel: 'Cómo Te Ayudamos',
-      solutionsTitle: 'Una app para cotizaciones, pagos, reportes y capital',
+      solutionsTitle: 'Banrendi funciona como tu asistente financiero de negocios.',
       
       solution1Badge: 'Cotizaciones y Pagos',
       solution1Title: 'De cotización a pago, sin fricción',
@@ -53,7 +54,7 @@
       solution1Feature3: 'Convierte cotizaciones a facturas con un clic',
       solution1Feature4: 'Recibe pagos seguros vía Stripe',
       
-      solution2Badge: 'Tarjeta de Gasto',
+      solution2Badge: 'Tarjeta de Gasto <span class="badge-coming-soon">Próximamente</span>',
       solution2Title: 'Gana acceso a capital mientras usas la app',
       solution2Text: 'Entre más usas Banrendi para cotizar y cobrar, más rápido calificas para una tarjeta de gasto al 0% de interés. Basada en tu flujo de efectivo real, no en tu puntaje de crédito.',
       solution2Feature1: 'Tarjeta de gasto al 0% de interés',
@@ -62,7 +63,7 @@
       solution2Feature4: 'Ayuda con materiales y flujo de efectivo',
       
       solution3Badge: 'Reportes',
-      solution3Title: 'Todas tus finanzas en un solo lugar',
+      solution3Title: 'Los contadores tardan días en responder a tus preguntas, Banrendi responde instantáneamente.',
       solution3Text: 'Conecta tus cuentas bancarias, Stripe, Venmo y más con Plaid. Ve todos tus ingresos y gastos en tiempo real. Asigna transacciones a proyectos para saber cuáles son más rentables.',
       solution3Feature1: 'Conecta todos tus bancos y apps de pago',
       solution3Feature2: 'Flujo de efectivo y P&L en tiempo real',
@@ -92,14 +93,17 @@
       
       // AI Chat
       aiLabel: 'Rendi IA',
-      aiTitle: 'Pregúntale a la IA sobre tu dinero',
+      aiTitle: 'Le escribes a tu contador el lunes. Responde el jueves. Banrendi responde instantáneamente, día o noche.',
       aiText: 'Escribe cualquier pregunta sobre tus finanzas y obtén respuestas instantáneas. Funciona en tu celular y en la web.',
       aiMobile: 'Móvil',
       aiWeb: 'Web',
       aiUserMsg: '¿Qué tan cerca estoy de mi meta de ingresos este mes?',
       aiBotIntro: 'Analizando tus ingresos de los últimos 3 meses:',
+      aiData1: '<strong>Marzo de 2025:</strong> $23,518.46',
+      aiData2: '<strong>Abril de 2025:</strong> $28,433.59',
+      aiData3: '<strong>Mayo de 2025:</strong> $19,836.63',
       aiBotInsight: 'Vas al <strong>68%</strong> de tu meta mensual. Necesitas <strong>$1,200</strong> más para alcanzarla.',
-      
+
       // Bilingual
       bilingualLabel: '100% en Español',
       bilingualTitle: 'Cotizaciones, facturas y reportes en tu idioma',
@@ -171,14 +175,15 @@
       navLink3: 'Why Us',
       navLink4: 'Get Started',
       navCta: 'Early Access',
-      
+
       // Hero
+      heroSocialProof: 'Coming soon: A spend card based on your finances, not your credit score.',
       heroLabel: 'Secure Finance Platform',
-      heroTitle: 'Quote, get paid, and track your money <strong>all in one place</strong>',
-      heroSubtitle: 'Send quotes, convert to invoices, receive payments, and see all your finances connected. The more you use it, the faster you qualify for your spend card.',
+      heroTitle: 'We help contractors grow their businesses.',
+      heroSubtitle: 'Send quotes, get paid, and track your money all in one place.',
       heroCta1: 'Download App',
       heroCta2: 'See How It Works',
-      heroPartnersLabel: 'Secure infrastructure by',
+      heroPartnersLabel: 'Secure Infrastructure Powered By',
       heroPartnersTagline: 'Secure payments and connected accounts with bank-level encryption',
       heroStat1Value: '256-bit',
       heroStat1Label: 'Bank-level encryption',
@@ -200,7 +205,7 @@
       
       // Solutions
       solutionsLabel: 'How We Help',
-      solutionsTitle: 'One app for quotes, payments, reports and capital',
+      solutionsTitle: 'Banrendi works like your business financial assistant.',
       
       solution1Badge: 'Quotes & Payments',
       solution1Title: 'From quote to payment, no friction',
@@ -210,7 +215,7 @@
       solution1Feature3: 'Convert quotes to invoices with one click',
       solution1Feature4: 'Receive secure payments via Stripe',
       
-      solution2Badge: 'Spend Card',
+      solution2Badge: 'Spend Card <span class="badge-coming-soon">Coming Soon</span>',
       solution2Title: 'Earn access to capital while using the app',
       solution2Text: 'The more you use Banrendi to quote and collect, the faster you qualify for a 0% interest spend card. Based on your real cash flow, not your credit score.',
       solution2Feature1: '0% interest spend card',
@@ -219,7 +224,7 @@
       solution2Feature4: 'Help with materials and cash flow',
       
       solution3Badge: 'Reports',
-      solution3Title: 'All your finances in one place',
+      solution3Title: 'Bookkeepers take days to respond to your questions, Banrendi responds instantly.',
       solution3Text: 'Connect your bank accounts, Stripe, Venmo and more with Plaid. See all your income and expenses in real time. Assign transactions to projects to see which are most profitable.',
       solution3Feature1: 'Connect all your banks and payment apps',
       solution3Feature2: 'Cash flow and P&L in real time',
@@ -249,14 +254,17 @@
       
       // AI Chat
       aiLabel: 'Rendi AI',
-      aiTitle: 'Ask AI about your money',
+      aiTitle: 'You text your bookkeeper Monday. They reply Thursday. Banrendi answers instantly, day or night.',
       aiText: 'Type any question about your finances and get instant answers. Works on your phone and on the web.',
       aiMobile: 'Mobile',
       aiWeb: 'Web',
       aiUserMsg: 'How close am I to my income goal this month?',
       aiBotIntro: 'Analyzing your income from the last 3 months:',
+      aiData1: '<strong>March 2025:</strong> $23,518.46',
+      aiData2: '<strong>April 2025:</strong> $28,433.59',
+      aiData3: '<strong>May 2025:</strong> $19,836.63',
       aiBotInsight: "You're at <strong>68%</strong> of your monthly goal. You need <strong>$1,200</strong> more to reach it.",
-      
+
       // Bilingual
       bilingualLabel: '100% Bilingual',
       bilingualTitle: 'Quotes, invoices and reports in your language',
@@ -323,7 +331,7 @@
     }
   };
 
-  var currentLang = 'es'; // Start in Spanish
+  var currentLang = 'en'; // Start in English
 
   // ---- Navigation scroll behavior ----
   var nav = document.getElementById('nav');
@@ -553,12 +561,14 @@
     if (mobileCta) mobileCta.textContent = t.navCta;
     
     // Hero
+    var heroSocialProof = document.querySelector('.hero-social-proof-text');
     var heroLabel = document.querySelector('.hero-label');
     var heroTitle = document.querySelector('.hero-title');
     var heroSubtitle = document.querySelector('.hero-subtitle');
     var heroCtaBtn = document.querySelector('.hero-cta');
     var heroStats = document.querySelectorAll('.hero-stat');
-    
+
+    if (heroSocialProof) heroSocialProof.textContent = t.heroSocialProof;
     if (heroLabel) heroLabel.textContent = t.heroLabel;
     if (heroTitle) {
       // Re-apply word splitting for animation
@@ -661,7 +671,7 @@
       
       // Solution 2
       if (features[1]) {
-        features[1].querySelector('.solution-badge').textContent = t.solution2Badge;
+        features[1].querySelector('.solution-badge').innerHTML = t.solution2Badge;
         features[1].querySelector('h3').textContent = t.solution2Title;
         features[1].querySelector('.solution-feature-content > p').textContent = t.solution2Text;
         var list2 = features[1].querySelectorAll('.feature-list li');
@@ -779,6 +789,15 @@
       }
       if (aiUserMsg) aiUserMsg.textContent = t.aiUserMsg;
       if (aiBotIntro) aiBotIntro.textContent = t.aiBotIntro;
+
+      // Update AI data list items
+      var aiDataList = aiSection.querySelectorAll('.ai-data-list li');
+      if (aiDataList.length >= 3) {
+        aiDataList[0].innerHTML = t.aiData1;
+        aiDataList[1].innerHTML = t.aiData2;
+        aiDataList[2].innerHTML = t.aiData3;
+      }
+
       if (aiBotInsight) aiBotInsight.innerHTML = t.aiBotInsight;
     }
     
@@ -893,10 +912,10 @@
     var langOptions = document.querySelectorAll('.lang-option');
 
     if (langSwitch && langOptions.length === 2) {
-      // Set initial state (Spanish active)
-      langSwitch.classList.add('active');
-      langOptions[0].classList.remove('lang-active');
-      langOptions[1].classList.add('lang-active');
+      // Set initial state (English active)
+      langSwitch.classList.remove('active');
+      langOptions[0].classList.add('lang-active');
+      langOptions[1].classList.remove('lang-active');
 
       langSwitch.addEventListener('click', function () {
         // Toggle language
@@ -1014,5 +1033,7 @@
     initScrollAnimations();
     initLanguageToggle();
     initWaitlistForm();
+    // Apply initial language translations
+    applyTranslations(currentLang);
   });
 })();
