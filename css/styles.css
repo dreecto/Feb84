@@ -1179,6 +1179,11 @@ h1, h2, h3, h4 {
 .market-stat-card {
   text-align: center;
   padding: var(--space-xl);
+  border-right: 1px solid var(--color-gray-13);
+}
+
+.market-stat-card:last-child {
+  border-right: none;
 }
 
 .market-stat-number {
@@ -1552,32 +1557,27 @@ h1, h2, h3, h4 {
 
 /* ---------- Values / About ---------- */
 .values-grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
 }
 
 .value-card {
-  max-width: 700px;
   padding: var(--space-2xl);
   background: var(--color-white);
   border-radius: var(--border-radius-lg);
   border: 1px solid var(--color-gray-13);
-  text-align: center;
 }
 
-.value-card .section-label {
-  display: inline-block;
-  margin-bottom: var(--space-md);
+.value-card h3 {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
 }
 
-.value-card .section-title {
-  margin-bottom: var(--space-lg);
-  font-size: var(--font-size-2xl);
-}
-
-.value-card p:last-child {
+.value-card p {
   font-size: var(--font-size-base);
-  color: var(--color-gray-75);
+  color: var(--color-gray-55);
   line-height: 1.6;
   margin: 0;
 }
@@ -2148,6 +2148,7 @@ h1, h2, h3, h4 {
 
   .values-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-md);
   }
 
   .cta-form-row {
