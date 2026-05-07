@@ -121,6 +121,7 @@
       about3Text: 'Somos una plataforma financiera que te ayuda a cotizar, cobrar, y ver tu dinero. Sin sucursales, sin filas, sin papeleo. Solo herramientas que funcionan.',
       
       // CTA
+      ctaTradesLabel: 'Para techadores, plomeros, electricistas, pintores y más',
       ctaTitle: '¿Listo para hacerte la vida más fácil?',
       ctaSubtitle: 'Únete a la lista de espera y sé uno de los primeros en probar Banrendi. Pronto abriremos para nuevos contratistas.',
       ctaName: 'Tu nombre',
@@ -225,7 +226,7 @@
       
       solution3Badge: 'Reports',
       solution3Title: 'Your financial reports are done. Always.',
-      solution3Text: 'Connect your bank accounts and Banrendi tracks your projects so you can see how they're performing. View income, expenses, cash flow and P&L for your business, 24/7. Never be in the dark.',
+      solution3Text: 'Connect your bank accounts and Banrendi tracks your projects so you can see how they\'re performing. View income, expenses, cash flow and P&L for your business, 24/7. Never be in the dark.',
       solution3Feature1: 'Connect all your banks and payment apps',
       solution3Feature2: 'Cash flow and P&L in real time',
       solution3Feature3: 'Assign expenses to projects for profitability',
@@ -282,6 +283,7 @@
       about3Text: "We're a finance platform that helps you quote, collect, and see your money. No branches, no lines, no paperwork. Just tools that work.",
       
       // CTA
+      ctaTradesLabel: 'For roofers, plumbers, electricians, painters and more',
       ctaTitle: 'Ready to make your life easier?',
       ctaSubtitle: 'Join the waitlist and be one of the first to try Banrendi. We\'re opening up to new contractors soon.',
       ctaName: 'Your name',
@@ -558,7 +560,7 @@
       mobileLinks[3].textContent = t.navLink4;
     }
     var mobileCta = document.querySelector('.mobile-menu-cta');
-    if (mobileCta) mobileCta.textContent = t.navCta;
+    if (mobileCta) mobileCta.textContent = t.heroCta1;
     
     // Hero
     var heroSocialProof = document.querySelector('.hero-social-proof-text');
@@ -838,8 +840,10 @@
     // CTA
     var ctaSection = document.getElementById('waitlist');
     if (ctaSection) {
+      var cTradesLabel = ctaSection.querySelector('.cta-trades-label');
       var cTitle = ctaSection.querySelector('.cta-title');
       var cSubtitle = ctaSection.querySelector('.cta-subtitle');
+      if (cTradesLabel) cTradesLabel.textContent = t.ctaTradesLabel;
       var cInputs = ctaSection.querySelectorAll('.cta-input');
       var cSelect = ctaSection.querySelector('.cta-select');
       var cBtn = ctaSection.querySelector('.btn');
@@ -862,7 +866,7 @@
           options[4].textContent = t.ctaTypeOther;
         }
       }
-      if (cBtn) cBtn.textContent = t.ctaButton;
+      if (cBtn) cBtn.textContent = t.heroCta1;
       if (cDisclaimer) cDisclaimer.textContent = t.ctaDisclaimer;
     }
     

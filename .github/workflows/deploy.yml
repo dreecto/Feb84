@@ -1,6 +1,6 @@
 name: Deploy to GitHub Pages
 
-on:
+"on":
   push:
       branches: [claude/verify-github-connection-9PCom]
         workflow_dispatch:
