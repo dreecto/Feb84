@@ -178,10 +178,10 @@
       navCta: 'Early Access',
 
       // Hero
-      heroSocialProof: 'Soon: A spend card based on your numbers not your credit',
+      heroSocialProof: 'The financial assistant built for contractors',
       heroLabel: 'Secure Finance Platform',
-      heroTitle: 'We help contractors grow their businesses.',
-      heroSubtitle: 'Send quotes, get paid, and track your money all in one place.',
+      heroTitle: 'You\'re making good money. Do you know where it\'s going?',
+      heroSubtitle: 'Know what you have, what you\'re owed, and what\'s coming — before it becomes a problem.',
       heroCta1: 'Download App',
       heroCta2: 'See How It Works',
       heroPartnersLabel: 'Secure Infrastructure Powered By',
@@ -195,42 +195,42 @@
       
       // Problem
       problemLabel: 'We Get It',
-      problemTitle: "You didn't start your business to do paperwork",
-      problemSubtitle: "You're great at what you do. But creating quotes by hand, chasing payments, and not knowing how much money you have... that's holding you back.",
-      problem1Title: 'Manual quotes take forever',
-      problem1Text: "You make quotes in Word or on paper. When there are changes, you have to redo everything. And converting to invoice is another headache.",
-      problem2Title: 'Getting paid is a full-time job',
-      problem2Text: "Chasing checks, sending reminders, waiting weeks to get paid. You spend too much time collecting and not enough time building.",
-      problem3Title: "You don't know how much money you have",
-      problem3Text: "Your money is in multiple banks and apps. You have no idea of your real cash flow, or which projects are most profitable. Guessing doesn't work.",
+      problemTitle: "We built the easiest way for you to stay on top of your money",
+      problemSubtitle: "Making money is the most important thing you do, but losing track of your money is the thing that gets in the way.",
+      problem1Title: 'Connect your accounts',
+      problem1Text: "Link your banks and payment apps in seconds — everything in one place from day one.",
+      problem2Title: 'Tell us what matters to you',
+      problem2Text: "Cash flow, project profit, upcoming expenses — your dashboard shows exactly what you need.",
+      problem3Title: "Your reports, always ready",
+      problem3Text: "P&L, income, expenses — updated in real time. No spreadsheets, no waiting, no guessing.",
       
       // Solutions
       solutionsLabel: 'How We Help',
       solutionsTitle: 'Banrendi works like your business financial assistant.',
       
-      solution1Badge: 'Quotes & Payments',
-      solution1Title: 'From quote to payment, no friction',
-      solution1Text: 'Create professional quotes, update change orders easily, and convert everything to invoice with one click. Your clients pay online with Stripe, secure and fast.',
-      solution1Feature1: 'Send professional quotes in minutes',
-      solution1Feature2: 'Update change orders without redoing everything',
-      solution1Feature3: 'Convert quotes to invoices with one click',
-      solution1Feature4: 'Receive secure payments via Stripe',
+      solution1Badge: 'Financial Clarity',
+      solution1Title: 'Making money matters. Knowing where it goes matters just as much.',
+      solution1Text: 'Every dollar in, every dollar out — tracked automatically. Banrendi keeps your income, expenses, and cash flow current in real time and surfaces what matters, so nothing slips by you while you\'re focused on the job.',
+      solution1Feature1: 'Income and expenses tracked automatically',
+      solution1Feature2: 'Get notified when something looks off',
+      solution1Feature3: '',
+      solution1Feature4: '',
       
-      solution2Badge: 'Spend Card <span class="badge-coming-soon">Coming Soon</span>',
-      solution2Title: 'Earn access to capital while using the app',
-      solution2Text: 'The more you use Banrendi to quote and collect, the faster you qualify for a 0% interest spend card. Based on your real cash flow, not your credit score.',
-      solution2Feature1: '0% interest spend card',
-      solution2Feature2: 'Limit based on your income, not your FICO',
-      solution2Feature3: 'Qualify faster as you use the app',
-      solution2Feature4: 'Help with materials and cash flow',
+      solution2Badge: 'Your Books, Reinvented',
+      solution2Title: 'That was then. This is now.',
+      solution2Text: 'Before, getting answers about your finances meant booking an appointment with your bookkeeper and waiting days for a response. Today, Banrendi answers every question instantly — 24/7, as easy as sending a text.',
+      solution2Feature1: 'Book an appointment with your bookkeeper',
+      solution2Feature2: 'Wait days for a response',
+      solution2Feature3: 'Ask Banrendi any financial question, anytime',
+      solution2Feature4: 'Get instant answers, 24/7 — no waiting, no calls',
       
-      solution3Badge: 'Reports',
-      solution3Title: 'Your financial reports are done. Always.',
-      solution3Text: 'Connect your bank accounts and Banrendi tracks your projects so you can see how they\'re performing. View income, expenses, cash flow and P&L for your business, 24/7. Never be in the dark.',
-      solution3Feature1: 'Connect all your banks and payment apps',
-      solution3Feature2: 'Cash flow and P&L in real time',
-      solution3Feature3: 'Assign expenses to projects for profitability',
-      solution3Feature4: 'Ask AI about your money',
+      solution3Badge: 'Profit & Loss',
+      solution3Title: 'The one report that runs your business — and proves it.',
+      solution3Text: 'Your P&L is what lenders, accountants, and the IRS ask for. Banrendi generates it automatically — so you\'re ready for tax season, a loan application, or just knowing where you stand.',
+      solution3Feature1: 'Tax-ready P&L, always current',
+      solution3Feature2: 'Share with your bank or lender in one click',
+      solution3Feature3: '',
+      solution3Feature4: '',
       
       // How it works
       howLabel: 'How It Works',
@@ -255,16 +255,16 @@
       
       // AI Chat
       aiLabel: 'Rendi AI',
-      aiTitle: 'You text your bookkeeper Monday. They reply Thursday. Banrendi answers instantly, day or night.',
-      aiText: 'Type any question about your finances and get instant answers. Works on your phone and on the web.',
+      aiTitle: 'We\'ll flag it. And if you have a question — ask it.',
+      aiText: 'Banrendi tells you when expenses are coming up, when cash flow looks tight, or when it\'s time to collect. And if you want to dig deeper — how much did I spend with Roofing Direct? Which project made me the most? — just ask. Answers in seconds.',
       aiMobile: 'Mobile',
       aiWeb: 'Web',
-      aiUserMsg: 'How close am I to my income goal this month?',
-      aiBotIntro: 'Analyzing your income from the last 3 months:',
-      aiData1: '<strong>March 2025:</strong> $23,518.46',
-      aiData2: '<strong>April 2025:</strong> $28,433.59',
-      aiData3: '<strong>May 2025:</strong> $19,836.63',
-      aiBotInsight: "You're at <strong>68%</strong> of your monthly goal. You need <strong>$1,200</strong> more to reach it.",
+      aiUserMsg: 'How much have I spent with Roofing Direct this year?',
+      aiBotIntro: 'You\'ve paid <strong>Roofing Direct</strong> a total of <strong>$34,820</strong> across 9 transactions in 2024. That\'s up 18% from last year.',
+      aiData1: '<strong>Largest payment:</strong> $8,400 — March 14',
+      aiData2: '<strong>Most recent:</strong> $3,200 — Oct 2',
+      aiData3: '',
+      aiBotInsight: '💡 Based on your volume, you may qualify for contractor pricing. Negotiating a 10% discount could save you <strong>~$3,400/year</strong>.',
 
       // Bilingual
       bilingualLabel: '100% Bilingual',
@@ -285,7 +285,7 @@
       // CTA
       ctaTradesLabel: 'For roofers, plumbers, electricians, painters and more',
       ctaTitle: 'Ready to make your life easier?',
-      ctaSubtitle: 'Join the waitlist and be one of the first to try Banrendi. We\'re opening up to new contractors soon.',
+      ctaSubtitle: 'Download the app and start seeing your finances clearly — in minutes.',
       ctaName: 'Your name',
       ctaEmail: 'Email address',
       ctaCompany: 'Company name',
@@ -298,7 +298,7 @@
       ctaDisclaimer: "We'll only email you when it's your turn. No spam, ever.",
       
       // Footer
-      footerTagline: 'Quotes, payments, reports and capital for contractors. 100% bilingual.',
+      footerTagline: 'Financial clarity for contractors and their families. Available in English and Spanish.',
       footerProduct: 'Product',
       footerProd1: 'Quotes & Payments',
       footerProd2: 'Financial Reports',
@@ -389,43 +389,8 @@
     });
   });
 
-  // ---- Hero text cascade animation ----
-  function initHeroAnimation() {
-    var heroTitle = document.querySelector('.hero-title');
-    var heroContent = document.querySelector('.hero-content');
-    
-    if (heroTitle && heroContent) {
-      // Split title into words and wrap each in a span
-      var text = heroTitle.innerHTML;
-      // Handle the <strong> tag specially
-      var parts = text.split(/(<strong>.*?<\/strong>)/);
-      var wrappedHtml = parts.map(function(part) {
-        if (part.startsWith('<strong>')) {
-          // Wrap words inside strong tag
-          var innerText = part.replace(/<\/?strong>/g, '');
-          var words = innerText.split(/\s+/);
-          var wrappedWords = words.map(function(word) {
-            return '<span class="word">' + word + '</span>';
-          }).join(' ');
-          return '<strong>' + wrappedWords + '</strong>';
-        } else {
-          // Wrap regular words
-          var words = part.split(/\s+/).filter(function(w) { return w.length > 0; });
-          return words.map(function(word) {
-            return '<span class="word">' + word + '</span>';
-          }).join(' ');
-        }
-      }).join(' ');
-      
-      heroTitle.innerHTML = wrappedHtml;
-      
-      // Trigger animation after a short delay
-      setTimeout(function() {
-        heroTitle.classList.add('animate');
-        heroContent.classList.add('animate');
-      }, 200);
-    }
-  }
+  // ---- Hero text cascade animation - disabled, hero loads instantly ----
+  function initHeroAnimation() {}
 
   // ---- Nav scroll effect ----
   function initNavScroll() {
@@ -572,28 +537,7 @@
 
     if (heroSocialProof) heroSocialProof.textContent = t.heroSocialProof;
     if (heroLabel) heroLabel.textContent = t.heroLabel;
-    if (heroTitle) {
-      // Re-apply word splitting for animation
-      var text = t.heroTitle;
-      var parts = text.split(/(<strong>.*?<\/strong>)/);
-      var wrappedHtml = parts.map(function(part) {
-        if (part.startsWith('<strong>')) {
-          var innerText = part.replace(/<\/?strong>/g, '');
-          var words = innerText.split(/\s+/);
-          var wrappedWords = words.map(function(word) {
-            return '<span class="word" style="opacity:1;transform:none;filter:none;">' + word + '</span>';
-          }).join(' ');
-          return '<strong>' + wrappedWords + '</strong>';
-        } else {
-          var words = part.split(/\s+/).filter(function(w) { return w.length > 0; });
-          return words.map(function(word) {
-            return '<span class="word" style="opacity:1;transform:none;filter:none;">' + word + '</span>';
-          }).join(' ');
-        }
-      }).join(' ');
-      heroTitle.innerHTML = wrappedHtml;
-      heroTitle.classList.add('animate');
-    }
+    if (heroTitle) heroTitle.innerHTML = t.heroTitle;
     if (heroSubtitle) heroSubtitle.textContent = t.heroSubtitle;
     if (heroCtaBtn) heroCtaBtn.textContent = t.heroCta1;
     if (heroStats.length >= 3) {
@@ -790,7 +734,7 @@
         aiPlatforms[1].lastChild.textContent = ' ' + t.aiWeb;
       }
       if (aiUserMsg) aiUserMsg.textContent = t.aiUserMsg;
-      if (aiBotIntro) aiBotIntro.textContent = t.aiBotIntro;
+      if (aiBotIntro) aiBotIntro.innerHTML = t.aiBotIntro;
 
       // Update AI data list items
       var aiDataList = aiSection.querySelectorAll('.ai-data-list li');
