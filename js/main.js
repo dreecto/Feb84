@@ -16,10 +16,10 @@
       navCta: 'Acceso Anticipado',
 
       // Hero
-      heroSocialProof: 'Próximamente: Una tarjeta de gasto basada en tus números, no en tu crédito',
+      heroSocialProof: 'El asistente financiero hecho para contratistas',
       heroLabel: 'Plataforma Financiera Segura',
-      heroTitle: 'Ayudamos a contratistas a crecer sus negocios.',
-      heroSubtitle: 'Envía cotizaciones, cobra, y controla tu dinero todo en un solo lugar.',
+      heroTitle: 'Estás ganando bien. ¿Sabes a dónde va tu dinero?',
+      heroSubtitle: 'Sabe lo que tienes, lo que te deben, y lo que se viene — antes de que sea un problema.',
       heroCta1: 'Descargar App',
       heroCta2: 'Ver Cómo Funciona',
       heroPartnersLabel: 'Infraestructura Segura Impulsada Por',
@@ -33,42 +33,42 @@
       
       // Problem
       problemLabel: 'Te Entendemos',
-      problemTitle: 'No empezaste tu negocio para hacer papeleo',
-      problemSubtitle: 'Eres bueno en lo que haces. Pero no saber cuánto dinero tienes te frena.',
-      problem1Title: 'Cotizaciones a mano toman mucho tiempo',
-      problem1Text: 'Haces cotizaciones en Word o en papel. Cuando hay cambios, tienes que rehacer todo. Y luego convertir a factura es otro dolor de cabeza.',
-      problem2Title: 'Cobrar es un trabajo de tiempo completo',
-      problem2Text: 'Perseguir cheques, mandar recordatorios, esperar semanas para que te paguen. Pasas demasiado tiempo cobrando y no suficiente tiempo construyendo.',
-      problem3Title: 'No sabes cuánto dinero tienes',
-      problem3Text: 'Tu dinero está en varios bancos y apps. No tienes idea de tu flujo real, ni cuáles proyectos te dejan más ganancia. Adivinando no funciona.',
+      problemTitle: 'Construimos la forma más fácil de controlar tu dinero',
+      problemSubtitle: 'Ganar dinero es lo que haces. Perderle la pista es lo que se interpone.',
+      problem1Title: 'Conecta tus cuentas',
+      problem1Text: 'Vincula tus bancos y apps de pago en segundos — todo en un solo lugar desde el primer día.',
+      problem2Title: 'Dinos qué importa',
+      problem2Text: 'Flujo de efectivo, ganancia por proyecto, gastos próximos — tu panel muestra exactamente lo que necesitas.',
+      problem3Title: 'Tus reportes, siempre listos',
+      problem3Text: 'P&L, ingresos, gastos — actualizados en tiempo real. Sin hojas de cálculo, sin esperas, sin adivinar.',
       
       // Solutions
       solutionsLabel: 'Cómo Te Ayudamos',
       solutionsTitle: 'Banrendi funciona como tu asistente financiero de negocios.',
       
-      solution1Badge: 'Cotizaciones y Pagos',
-      solution1Title: 'De cotización a pago, sin fricción',
-      solution1Text: 'Crea cotizaciones profesionales y convierte a factura con un clic. Tus clientes pagan en línea con Stripe.',
-      solution1Feature1: 'Envía cotizaciones profesionales en minutos',
-      solution1Feature2: 'Actualiza change orders sin rehacer todo',
-      solution1Feature3: 'Convierte cotizaciones a facturas con un clic',
-      solution1Feature4: 'Recibe pagos seguros vía Stripe',
-      
-      solution2Badge: 'Tarjeta de Gasto <span class="badge-coming-soon">Próximamente</span>',
-      solution2Title: 'Gana acceso a capital mientras usas la app',
-      solution2Text: 'Califica para una tarjeta de gasto al 0% basada en tu flujo real — no en tu puntaje de crédito.',
-      solution2Feature1: 'Tarjeta de gasto al 0% de interés',
-      solution2Feature2: 'Límite basado en tus ingresos, no tu FICO',
-      solution2Feature3: 'Califica más rápido mientras usas la app',
-      solution2Feature4: 'Ayuda con materiales y flujo de efectivo',
-      
-      solution3Badge: 'Reportes',
-      solution3Title: 'Tus reportes financieros están listos. Siempre.',
-      solution3Text: 'Ve ingresos, gastos, flujo de efectivo y P&L para tu negocio, 24/7. Siempre actualizado.',
-      solution3Feature1: 'Conecta todos tus bancos y apps de pago',
-      solution3Feature2: 'Flujo de efectivo y P&L en tiempo real',
-      solution3Feature3: 'Asigna gastos a proyectos para ver rentabilidad',
-      solution3Feature4: 'Pregúntale a la IA sobre tu dinero',
+      solution1Badge: 'Claridad Financiera',
+      solution1Title: 'Ganar dinero importa. Saber a dónde va importa igual.',
+      solution1Text: 'Cada dólar que entra, cada dólar que sale — rastreado automáticamente. Sabe tus ingresos, flujo de efectivo y gastos en tiempo real.',
+      solution1Feature1: 'Ingresos y gastos rastreados automáticamente',
+      solution1Feature2: 'Recibe alertas cuando algo no cuadra',
+      solution1Feature3: '',
+      solution1Feature4: '',
+
+      solution2Badge: 'Tus Libros, Reinventados',
+      solution2Title: 'Antes así. Ahora así.',
+      solution2Text: 'Antes: pide cita, espera días para respuestas. Ahora: pregúntale a Banrendi y obtén respuestas al instante, 24/7.',
+      solution2Feature1: 'Pide cita con tu contador',
+      solution2Feature2: 'Espera días para una respuesta',
+      solution2Feature3: 'Pregúntale a Banrendi cualquier pregunta, cuando quieras',
+      solution2Feature4: 'Respuestas al instante, 24/7 — sin esperas, sin llamadas',
+
+      solution3Badge: 'Pérdidas y Ganancias',
+      solution3Title: 'El reporte que maneja tu negocio — y lo demuestra.',
+      solution3Text: 'Tu P&L es lo que piden los prestamistas y el IRS. Banrendi lo genera automáticamente — para que siempre estés listo.',
+      solution3Feature1: 'P&L listo para impuestos, siempre actualizado',
+      solution3Feature2: 'Comparte con tu banco o prestamista con un clic',
+      solution3Feature3: '',
+      solution3Feature4: '',
       
       // How it works
       howLabel: 'Cómo Funciona',
@@ -93,7 +93,7 @@
       
       // AI Chat
       aiLabel: 'Rendi IA',
-      aiTitle: 'Le escribes a tu contador el lunes. Responde el jueves. Banrendi responde instantáneamente, día o noche.',
+      aiTitle: 'Lo detectamos. Y si tienes una pregunta — solo pregunta.',
       aiText: 'Recibe alertas cuando el flujo es bajo o es hora de cobrar. ¿Quieres saber más? Solo pregunta.',
       aiMobile: 'Móvil',
       aiWeb: 'Web',
@@ -111,7 +111,7 @@
       
       // About
       aboutLabel: 'Por Qué Banrendi',
-      aboutTitle: 'Creamos Banrendi porque entendemos lo que significa ser contratista y hacer crecer tu negocio',
+      aboutTitle: 'Lo construimos porque hemos estado en tu lugar',
       aboutSubtitle: 'Nuestro equipo incluye contratistas y gerentes de construcción. Sabemos lo que es esperar semanas para cobrar.',
       about1Title: 'Seguridad de nivel bancario',
       about1Text: 'Encriptación de nivel bancario. Plaid conecta tus cuentas de forma segura. Tus datos siempre protegidos.',
@@ -123,7 +123,7 @@
       // CTA
       ctaTradesLabel: 'Para techadores, plomeros, electricistas, pintores y más',
       ctaTitle: '¿Listo para hacerte la vida más fácil?',
-      ctaSubtitle: 'Únete a la lista de espera y sé uno de los primeros en probar Banrendi. Pronto abriremos para nuevos contratistas.',
+      ctaSubtitle: 'Descarga la app y empieza a ver tus finanzas claramente — en minutos.',
       ctaName: 'Tu nombre',
       ctaEmail: 'Correo electrónico',
       ctaCompany: 'Nombre de tu empresa',
@@ -136,7 +136,7 @@
       ctaDisclaimer: 'Solo te escribiremos cuando sea tu turno. Sin spam, nunca.',
       
       // Footer
-      footerTagline: 'Cotizaciones, pagos, reportes y capital para contratistas. 100% en español.',
+      footerTagline: 'Claridad financiera para contratistas y sus familias. Disponible en inglés y español.',
       footerProduct: 'Producto',
       footerProd1: 'Cotizaciones y Pagos',
       footerProd2: 'Reportes Financieros',
