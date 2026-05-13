@@ -43,16 +43,19 @@
       problem3Text: 'P&L, ingresos, gastos — actualizados en tiempo real. Sin hojas de cálculo, sin esperas, sin adivinar.',
       
       // Solutions
-      solutionsLabel: 'Cómo Te Ayudamos',
-      solutionsTitle: 'Banrendi funciona como tu asistente financiero de negocios.',
-      
+      solutionsLabel: '',
+      solutionsTitle: '',
+
       solution1Badge: 'Claridad Financiera',
-      solution1Title: 'Ganar dinero importa. Saber a dónde va importa igual.',
-      solution1Text: 'Cada dólar que entra, cada dólar que sale — rastreado automáticamente. Sabe tus ingresos, flujo de efectivo y gastos en tiempo real.',
-      solution1Feature1: 'Ingresos y gastos rastreados automáticamente',
-      solution1Feature2: 'Recibe alertas cuando algo no cuadra',
+      solution1Title: 'Banrendi funciona como tu asistente financiero de negocios.',
+      solution1Text: 'Ganar dinero importa. Saber a dónde va importa igual.',
+      solution1Feature1: '✅ Ingresos y gastos rastreados automáticamente',
+      solution1Feature2: '✅ Recibe alertas cuando algo no cuadra',
       solution1Feature3: '',
       solution1Feature4: '',
+
+      before: 'Antes',
+      now: 'Ahora',
 
       solution2Badge: 'Tus Libros, Reinventados',
       solution2Title: 'Antes así. Ahora así.',
@@ -65,8 +68,8 @@
       solution3Badge: 'Pérdidas y Ganancias',
       solution3Title: 'El reporte que maneja tu negocio — y lo demuestra.',
       solution3Text: 'Tu P&L es lo que piden los prestamistas y el IRS. Banrendi lo genera automáticamente — para que siempre estés listo.',
-      solution3Feature1: 'P&L listo para impuestos, siempre actualizado',
-      solution3Feature2: 'Comparte con tu banco o prestamista con un clic',
+      solution3Feature1: '✅ P&L listo para impuestos, siempre actualizado',
+      solution3Feature2: '✅ Comparte con tu banco o prestamista con un clic',
       solution3Feature3: '',
       solution3Feature4: '',
       
@@ -138,9 +141,9 @@
       // Footer
       footerTagline: 'Claridad financiera para contratistas y sus familias. Disponible en inglés y español.',
       footerProduct: 'Producto',
-      footerProd1: 'Cotizaciones y Pagos',
-      footerProd2: 'Reportes Financieros',
-      footerProd3: 'Tarjeta de Gasto',
+      footerProd1: 'Cómo Funciona',
+      footerProd2: 'Resultados',
+      footerProd3: 'Rendi IA',
       footerCompany: 'Empresa',
       footerComp1: 'Por Qué Nosotros',
       footerComp2: 'Resultados',
@@ -205,17 +208,20 @@
       problem3Text: "P&L, income, expenses — updated in real time. No spreadsheets, no waiting, no guessing.",
       
       // Solutions
-      solutionsLabel: 'How We Help',
-      solutionsTitle: 'Banrendi works like your business financial assistant.',
-      
+      solutionsLabel: '',
+      solutionsTitle: '',
+
       solution1Badge: 'Financial Clarity',
-      solution1Title: 'Making money matters. Knowing where it goes matters just as much.',
-      solution1Text: 'Every dollar in, every dollar out — tracked automatically. Know your income, cash flow, and expenses in real time.',
-      solution1Feature1: 'Income and expenses tracked automatically',
-      solution1Feature2: 'Get notified when something looks off',
+      solution1Title: 'Banrendi works like your business financial assistant',
+      solution1Text: 'Making money matters. Knowing where it goes matters just as much.',
+      solution1Feature1: '✅ Income and expenses tracked automatically',
+      solution1Feature2: '✅ Get notified when something looks off',
       solution1Feature3: '',
       solution1Feature4: '',
       
+      before: 'Before',
+      now: 'Now',
+
       solution2Badge: 'Your Books, Reinvented',
       solution2Title: 'That was then. This is now.',
       solution2Text: 'Before: book an appointment, wait days for answers. Now: ask Banrendi and get answers instantly, 24/7.',
@@ -227,8 +233,8 @@
       solution3Badge: 'Profit & Loss',
       solution3Title: 'The one report that runs your business — and proves it.',
       solution3Text: 'Your P&L is what lenders and the IRS ask for. Banrendi generates it automatically — so you\'re always ready.',
-      solution3Feature1: 'Tax-ready P&L, always current',
-      solution3Feature2: 'Share with your bank or lender in one click',
+      solution3Feature1: '✅ Tax-ready P&L, always current',
+      solution3Feature2: '✅ Share with your bank or lender in one click',
       solution3Feature3: '',
       solution3Feature4: '',
       
@@ -300,9 +306,9 @@
       // Footer
       footerTagline: 'Financial clarity for contractors and their families. Available in English and Spanish.',
       footerProduct: 'Product',
-      footerProd1: 'Quotes & Payments',
-      footerProd2: 'Financial Reports',
-      footerProd3: 'Spend Card',
+      footerProd1: 'How It Works',
+      footerProd2: 'Results',
+      footerProd3: 'Rendi AI',
       footerCompany: 'Company',
       footerComp1: 'Why Us',
       footerComp2: 'Results',
@@ -619,26 +625,19 @@
       if (features[1]) {
         features[1].querySelector('.solution-badge').innerHTML = t.solution2Badge;
         features[1].querySelector('h3').textContent = t.solution2Title;
-        features[1].querySelector('.solution-feature-content > p').textContent = t.solution2Text;
-        var list2 = features[1].querySelectorAll('.feature-list li');
-        if (list2.length >= 4) {
-          list2[0].textContent = t.solution2Feature1;
-          list2[1].textContent = t.solution2Feature2;
-          list2[2].textContent = t.solution2Feature3;
-          list2[3].textContent = t.solution2Feature4;
+        var beforeLabel = features[1].querySelector('.before-label');
+        var afterLabel = features[1].querySelector('.after-label');
+        var beforeItems = features[1].querySelectorAll('.before-col li');
+        var afterItems = features[1].querySelectorAll('.after-col li');
+        if (beforeLabel) beforeLabel.textContent = t.before;
+        if (afterLabel) afterLabel.textContent = t.now;
+        if (beforeItems.length >= 2) {
+          beforeItems[0].textContent = t.solution2Feature1;
+          beforeItems[1].textContent = t.solution2Feature2;
         }
-        // Mock UI
-        var mock2 = features[1].querySelector('.mock-content');
-        if (mock2) {
-          var mockLabel2 = mock2.querySelector('.mock-row-sm span');
-          var mockRows2 = mock2.querySelectorAll('.mock-row');
-          var mockBtn2 = mock2.querySelector('.mock-btn');
-          if (mockLabel2) mockLabel2.textContent = t.mockCardLabel;
-          if (mockRows2.length >= 2) {
-            mockRows2[0].querySelector('.mock-label').textContent = t.mockCardAvailable;
-            mockRows2[1].querySelector('.mock-label').textContent = t.mockCardInterest;
-          }
-          if (mockBtn2) mockBtn2.textContent = t.mockCardBtn;
+        if (afterItems.length >= 2) {
+          afterItems[0].textContent = t.solution2Feature3;
+          afterItems[1].textContent = t.solution2Feature4;
         }
       }
       

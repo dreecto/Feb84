@@ -1010,6 +1010,11 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  align-self: center;
+  width: fit-content;
 }
 
 .before-after-grid {
@@ -1096,20 +1101,99 @@ h1, h2, h3, h4 {
 .feature-list li {
   font-size: var(--font-size-sm);
   color: var(--color-gray-75);
-  padding-left: var(--space-lg);
-  position: relative;
   line-height: 1.5;
+  list-style: none;
 }
 
-.feature-list li::before {
-  content: '';
+/* ---------- Before / After Card ---------- */
+.before-after-card {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-gray-13);
+  width: 100%;
+  max-width: 420px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.before-col {
+  background: rgba(223, 51, 32, 0.05);
+  padding: var(--space-md);
+}
+
+.after-col {
+  background: rgba(11, 182, 52, 0.06);
+  padding: var(--space-md);
+}
+
+.before-after-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-gray-05);
+  color: var(--color-gray-55);
+  font-size: var(--font-size-base);
+  padding: 0 var(--space-xs);
+  border-left: 1px solid var(--color-gray-13);
+  border-right: 1px solid var(--color-gray-13);
+}
+
+.before-after-label {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+}
+
+.before-label { color: var(--color-danger); }
+.after-label { color: var(--color-success); }
+
+.before-after-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.before-item,
+.after-item {
+  font-size: var(--font-size-xs);
+  line-height: 1.4;
+  padding-left: 1.2em;
+  position: relative;
+}
+
+.before-item {
+  color: var(--color-gray-55);
+  text-decoration: line-through;
+  text-decoration-color: var(--color-danger);
+}
+
+.before-item::before {
+  content: '✕';
   position: absolute;
   left: 0;
-  top: 6px;
-  width: 6px;
-  height: 6px;
-  background: var(--color-primary);
-  border-radius: 1px;
+  color: var(--color-danger);
+  text-decoration: none;
+  font-size: 0.75em;
+  top: 0.1em;
+}
+
+.after-item { color: var(--color-gray-75); }
+
+.after-item::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-success);
+  font-weight: 700;
+  font-size: 0.85em;
+  top: 0.05em;
 }
 
 /* ---------- Feature Card Mocks ---------- */
