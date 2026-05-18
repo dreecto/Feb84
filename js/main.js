@@ -58,12 +58,14 @@
       now: 'Ahora',
 
       solution2Badge: 'Tus Libros, Reinventados',
-      solution2Title: 'Antes así. Ahora así.',
-      solution2Text: 'Antes: pide cita, espera días para respuestas. Ahora: pregúntale a Banrendi y obtén respuestas al instante, 24/7.',
-      solution2Feature1: 'Pide cita con tu contador',
-      solution2Feature2: 'Espera días para una respuesta',
-      solution2Feature3: 'Pregúntale a Banrendi cualquier pregunta, cuando quieras',
-      solution2Feature4: 'Respuestas al instante, 24/7 — sin esperas, sin llamadas',
+      solution2Title: 'Tu contador tarda días.\nBanrendi tarda segundos.',
+      solution2Text: '',
+      solution2Feature1: 'Llama a tu contador, espera 3–5 días',
+      solution2Feature2: 'Descubres que perdiste dinero — semanas después',
+      solution2Feature3: 'Pregúntale a Banrendi, obtén respuesta al instante',
+      solution2Feature4: 'Ve tu ganancia real, actualizada cada día',
+      solution2Feature5: 'Tiempo de impuestos? Ya estás listo',
+      solution2Feature6: 'Corres cada abril para juntar todo',
 
       solution3Badge: 'Pérdidas y Ganancias',
       solution3Title: 'El reporte que maneja tu negocio — y lo demuestra.',
@@ -223,12 +225,14 @@
       now: 'Now',
 
       solution2Badge: 'Your Books, Reinvented',
-      solution2Title: 'That was then. This is now.',
-      solution2Text: 'Before: book an appointment, wait days for answers. Now: ask Banrendi and get answers instantly, 24/7.',
-      solution2Feature1: 'Book an appointment with your bookkeeper',
-      solution2Feature2: 'Wait days for a response',
-      solution2Feature3: 'Ask Banrendi any financial question, anytime',
-      solution2Feature4: 'Get instant answers, 24/7 — no waiting, no calls',
+      solution2Title: 'Your bookkeeper takes days.\nBanrendi takes seconds.',
+      solution2Text: '',
+      solution2Feature1: 'Call your bookkeeper, wait 3–5 days',
+      solution2Feature2: 'Find out you lost money — weeks too late',
+      solution2Feature3: 'Ask Banrendi anything, get answers instantly',
+      solution2Feature4: 'See your real profit, updated daily',
+      solution2Feature5: 'Tax time? You\'re already ready',
+      solution2Feature6: 'Scramble every April to pull it all together',
       
       solution3Badge: 'Profit & Loss',
       solution3Title: 'The one report that runs your business — and proves it.',
@@ -631,13 +635,15 @@
         var afterItems = features[1].querySelectorAll('.after-col li');
         if (beforeLabel) beforeLabel.textContent = t.before;
         if (afterLabel) afterLabel.textContent = t.now;
-        if (beforeItems.length >= 2) {
+        if (beforeItems.length >= 3) {
           beforeItems[0].textContent = t.solution2Feature1;
           beforeItems[1].textContent = t.solution2Feature2;
+          beforeItems[2].textContent = t.solution2Feature6;
         }
-        if (afterItems.length >= 2) {
+        if (afterItems.length >= 3) {
           afterItems[0].textContent = t.solution2Feature3;
           afterItems[1].textContent = t.solution2Feature4;
+          afterItems[2].textContent = t.solution2Feature5;
         }
       }
       
@@ -972,10 +978,43 @@
     });
   }
 
+  // ---- Contractor Carousel ----
+  function initContractorCarousel() {
+    var carousel = document.querySelector('.contractor-carousel');
+    if (!carousel) return;
+    var slides = carousel.querySelectorAll('.carousel-slide');
+    var dots = carousel.querySelectorAll('.carousel-dot');
+    var current = 0;
+    var interval;
+
+    function goTo(index) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function next() { goTo(current + 1); }
+
+    function start() { interval = setInterval(next, 4000); }
+    function stop() { clearInterval(interval); }
+
+    dots.forEach(function(dot, i) {
+      dot.addEventListener('click', function() { stop(); goTo(i); start(); });
+    });
+
+    carousel.addEventListener('mouseenter', stop);
+    carousel.addEventListener('mouseleave', start);
+
+    start();
+  }
+
   // ---- Init ----
   document.addEventListener('DOMContentLoaded', function () {
     initHeroAnimation();
     initNavScroll();
+    initContractorCarousel();
     initParallax();
     initScrollAnimations();
     initLanguageToggle();
