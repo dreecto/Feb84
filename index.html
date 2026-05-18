@@ -1,12 +1,124 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banrendi | Cotizaciones, Pagos y Reportes para Contratistas</title>
-  <meta name="description" content="Banrendi: plataforma financiera segura para contratistas. Env&iacute;a cotizaciones, cobra con Stripe, conecta tus cuentas con Plaid, y califica para una tarjeta de gasto al 0%.">
+
+  <title>Banrendi – Financial App for Contractors | QuickBooks Alternative</title>
+  <meta name="description" content="Built for contractors: track income & expenses, send quotes, collect payments via Stripe, and get AI-powered P&L reports. Simpler and more affordable than QuickBooks. Free to download.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Banrendi">
+  <meta name="application-name" content="Banrendi">
+  <meta name="theme-color" content="#006aff">
+
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link rel="apple-touch-icon" href="img/banrendi-logo.png">
+  <link rel="canonical" href="https://www.banrendi.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.banrendi.com/">
+  <meta property="og:title" content="Banrendi – Financial App for Contractors">
+  <meta property="og:description" content="Built for contractors: track income & expenses, send quotes, collect payments via Stripe, and get AI-powered P&L reports. Simpler and more affordable than QuickBooks. Free to download.">
+  <meta property="og:image" content="https://www.banrendi.com/img/product-shot.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Banrendi app screens showing financial dashboard, P&L reports, and Rendi AI assistant">
+  <meta property="og:site_name" content="Banrendi">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Banrendi – Financial App for Contractors">
+  <meta name="twitter:description" content="Built for contractors: track income & expenses, send quotes, collect payments via Stripe, and get AI-powered P&L reports. Simpler and more affordable than QuickBooks. Free to download.">
+  <meta name="twitter:image" content="https://www.banrendi.com/img/product-shot.png">
+  <meta name="twitter:image:alt" content="Banrendi app screens showing financial dashboard, P&L reports, and Rendi AI assistant">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.banrendi.com/#app",
+        "name": "Banrendi",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "iOS, Android",
+        "url": "https://www.banrendi.com",
+        "description": "Financial management app for independent contractors and tradespeople. Track income and expenses, send quotes, collect payments via Stripe, connect bank accounts with Plaid, and get AI-powered P&L reports — simpler than QuickBooks.",
+        "screenshot": "https://www.banrendi.com/img/product-shot.png",
+        "inLanguage": ["en", "es"],
+        "featureList": [
+          "Automatic income and expense tracking",
+          "AI-powered financial insights with Rendi AI",
+          "Stripe payment collection",
+          "Plaid bank account connection",
+          "Profit & loss reports",
+          "Cash flow monitoring and alerts",
+          "Quote and invoice generation"
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Premium",
+            "price": "37.99",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "37.99",
+              "priceCurrency": "USD",
+              "unitText": "MONTH"
+            }
+          }
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Independent contractors, tradespeople, self-employed workers, roofers, plumbers, electricians, landscapers, painters, general contractors"
+        },
+        "publisher": {
+          "@id": "https://www.banrendi.com/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.banrendi.com/#organization",
+        "name": "Banrendi",
+        "url": "https://www.banrendi.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.banrendi.com/img/banrendi-logo.png",
+          "width": 200,
+          "height": 60
+        },
+        "description": "Banrendi builds financial tools for independent contractors and tradespeople in the United States.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Support",
+          "url": "https://www.banrendi.com/support.html"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.banrendi.com/#website",
+        "url": "https://www.banrendi.com",
+        "name": "Banrendi",
+        "description": "Financial app for contractors and tradespeople — simpler than QuickBooks.",
+        "inLanguage": ["en", "es"],
+        "publisher": {
+          "@id": "https://www.banrendi.com/#organization"
+        }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,7 +132,7 @@
       <a href="#" class="nav-logo"><img src="img/sumi-logo.png" alt="SUMI" class="nav-logo-img"></a>
       <div class="nav-menu-trigger">
         <span class="nav-menu-label">MENU</span>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir men&uacute;">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
           <span></span>
           <span></span>
         </button>
@@ -66,9 +178,9 @@
       <div class="hero-partners">
         <span class="hero-partners-label">Secure Infrastructure Powered By</span>
         <div class="hero-partners-logos">
-          <img src="img/stripe-logo.png" alt="Stripe" class="partner-logo" title="Pagos seguros con Stripe">
+          <img src="img/stripe-logo.png" alt="Stripe – secure payment processing" class="partner-logo" title="Payments secured by Stripe">
           <span class="partner-separator">+</span>
-          <img src="img/plaid-logo.png" alt="Plaid" class="partner-logo" title="Cuentas conectadas con Plaid">
+          <img src="img/plaid-logo.png" alt="Plaid – bank account connection" class="partner-logo" title="Bank accounts connected via Plaid">
         </div>
       </div>
     </div>
@@ -83,7 +195,7 @@
         <p class="section-subtitle">Making money is what you do. Losing track of it is what gets in the way.</p>
       </div>
       <div class="product-shot-wrap">
-        <img src="img/product-shot.png" alt="Banrendi app screens" class="product-shot">
+        <img src="img/product-shot.png" alt="Banrendi contractor financial app showing income tracking, expense reports, P&L dashboard, and AI assistant" class="product-shot">
       </div>
     </div>
   </section>
@@ -201,8 +313,8 @@
       <div class="ai-feature ai-feature-reverse">
         <div class="ai-feature-content solution-feature-content">
           <div class="solution-badge">Rendi AI</div>
-          <h3>We'll flag it. Just ask.</h3>
-          <p>Get alerted when cash flow looks tight or it's time to collect. Want to dig deeper? Just ask — answers in seconds.</p>
+          <h3>An AI assistant that watches your money and answers your questions</h3>
+          <p>Rendi automatically alerts you when cash is tight, a payment is overdue, or something looks off. Have a question about your finances? Just ask — you get a plain-English answer in seconds.</p>
         </div>
         <div class="ai-feature-visual">
           <div class="app-screenshot-frame">
