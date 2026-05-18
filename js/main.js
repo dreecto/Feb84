@@ -1004,6 +1004,11 @@
       dot.addEventListener('click', function() { stop(); goTo(i); start(); });
     });
 
+    var prevBtn = carousel.querySelector('.carousel-arrow-prev');
+    var nextBtn = carousel.querySelector('.carousel-arrow-next');
+    if (prevBtn) prevBtn.addEventListener('click', function() { stop(); goTo(current - 1); start(); });
+    if (nextBtn) nextBtn.addEventListener('click', function() { stop(); goTo(current + 1); start(); });
+
     carousel.addEventListener('mouseenter', stop);
     carousel.addEventListener('mouseleave', start);
 
