@@ -235,9 +235,6 @@ h1, h2, h3, h4 {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.30);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
@@ -619,6 +616,9 @@ h1, h2, h3, h4 {
 .hero-app-buttons {
   justify-content: flex-start;
   margin-bottom: var(--space-2xl);
+  isolation: isolate;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-app-buttons .btn-app-store {
@@ -630,6 +630,10 @@ h1, h2, h3, h4 {
   .hero-app-buttons {
     justify-content: center;
     margin-bottom: var(--space-lg);
+  }
+  .hero-app-buttons .btn-app-store {
+    background: #fff;
+    color: #000;
   }
 }
 
@@ -858,9 +862,10 @@ h1, h2, h3, h4 {
 
 .carousel-built-for-you {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
   color: #fff;
   font-size: clamp(2.5rem, 8vw, 6rem);
@@ -869,7 +874,6 @@ h1, h2, h3, h4 {
   text-align: center;
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.55);
   pointer-events: none;
-  white-space: nowrap;
 }
 
 .carousel-arrow {
@@ -901,15 +905,22 @@ h1, h2, h3, h4 {
 
 @media (max-width: 480px) {
   .carousel-built-for-you {
-    white-space: normal;
     padding: 0 16px;
   }
   .carousel-arrow {
     width: 36px;
     height: 36px;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.25);
   }
   .carousel-arrow-prev { left: 12px; }
   .carousel-arrow-next { right: 12px; }
+  .carousel-caption {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(0, 0, 0, 0.55);
+  }
 }
 
 
@@ -2540,7 +2551,7 @@ h1, h2, h3, h4 {
   .hero {
     grid-template-columns: 1fr;
     gap: 0;
-    padding: calc(var(--nav-height) + var(--space-3xl)) var(--space-lg) var(--space-2xl);
+    padding: calc(var(--nav-height) + var(--space-4xl)) var(--space-lg) var(--space-2xl);
     text-align: center;
     min-height: auto;
   }
@@ -2699,7 +2710,7 @@ h1, h2, h3, h4 {
   }
 
   .hero {
-    padding: calc(var(--nav-height) + var(--space-3xl)) var(--space-md) var(--space-xl);
+    padding: calc(var(--nav-height) + var(--space-4xl)) var(--space-md) var(--space-xl);
     gap: 0;
     background:
       linear-gradient(
