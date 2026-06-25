@@ -215,7 +215,7 @@
         <p class="section-subtitle">Making money is what you do. Losing track of it is what gets in the way.</p>
       </div>
       <div class="product-shot-wrap">
-        <img src="img/product-shot.png" alt="Banrendi contractor financial app showing income tracking, expense reports, P&L dashboard, and AI assistant" class="product-shot">
+        <img src="img/product-shot.png" alt="Banrendi contractor financial app showing income tracking, expense reports, P&L dashboard, and AI assistant" class="product-shot" loading="lazy">
       </div>
     </div>
   </section>
@@ -231,7 +231,7 @@
         </div>
         <div class="ai-feature-visual">
           <div class="app-screenshot-frame">
-            <img src="img/screenshots/4.png" alt="Rendi AI assistant" class="app-screenshot">
+            <img src="img/screenshots/4.png" alt="Rendi AI assistant" class="app-screenshot" loading="lazy">
           </div>
         </div>
       </div>
@@ -241,27 +241,27 @@
   <!-- Contractor Carousel Divider -->
   <div class="contractor-carousel">
     <div class="carousel-slide active">
-      <img src="img/roofer-hero.webp" alt="Builder at work" class="carousel-img">
+      <img src="img/roofer-hero.webp" alt="Builder at work" class="carousel-img" fetchpriority="high">
       <div class="carousel-caption">Builders</div>
     </div>
     <div class="carousel-slide">
-      <img src="img/electrician-hero.jpg" alt="Electrician at work" class="carousel-img">
+      <img src="img/electrician-hero.jpg" alt="Electrician at work" class="carousel-img" loading="lazy">
       <div class="carousel-caption">Electricians</div>
     </div>
     <div class="carousel-slide">
-      <img src="img/landscaper-hero.jpg" alt="Landscaper at work" class="carousel-img">
+      <img src="img/landscaper-hero.jpg" alt="Landscaper at work" class="carousel-img" loading="lazy">
       <div class="carousel-caption">Landscapers</div>
     </div>
     <div class="carousel-slide">
-      <img src="img/plumber-hero.webp" alt="Plumber at work" class="carousel-img">
+      <img src="img/plumber-hero.webp" alt="Plumber at work" class="carousel-img" loading="lazy">
       <div class="carousel-caption">Plumbers</div>
     </div>
     <div class="carousel-slide">
-      <img src="img/general-contractor.jpg" alt="General contractor at work" class="carousel-img">
+      <img src="img/general-contractor.jpg" alt="General contractor at work" class="carousel-img" loading="lazy">
       <div class="carousel-caption">General Contractors</div>
     </div>
     <div class="carousel-slide">
-      <img src="img/gutter-install-hero.jpg" alt="Gutter contractor at work" class="carousel-img">
+      <img src="img/gutter-install-hero.jpg" alt="Gutter contractor at work" class="carousel-img" loading="lazy">
       <div class="carousel-caption">Gutter Contractors</div>
     </div>
     <div class="carousel-built-for-you">Built for you</div>
@@ -298,7 +298,7 @@
         </div>
         <div class="solution-feature-visual">
           <div class="app-screenshot-frame">
-            <img src="img/screenshots/1.png" alt="Banrendi financial dashboard" class="app-screenshot">
+            <img src="img/screenshots/1.png" alt="Banrendi financial dashboard" class="app-screenshot" loading="lazy">
           </div>
         </div>
       </div>
@@ -336,7 +336,7 @@
         </div>
         <div class="solution-feature-visual">
           <div class="app-screenshot-frame">
-            <img src="img/screenshots/5.png" alt="Banrendi P&L report" class="app-screenshot">
+            <img src="img/screenshots/5.png" alt="Banrendi P&L report" class="app-screenshot" loading="lazy">
           </div>
         </div>
       </div>
@@ -344,6 +344,118 @@
   </section>
 
   <!-- How It Works Section -->
+  <section class="section section-how" id="market">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label how-eyebrow">How It Works</p>
+        <h2 class="section-title how-heading">Connect once. Rendi handles everything.</h2>
+        <p class="section-subtitle how-sub">Link your bank in under 2 minutes — Rendi AI tracks income, categorizes spending, and keeps your books clean automatically.</p>
+      </div>
+      <div class="how-card">
+
+        <!-- Left: Source accounts -->
+        <div class="how-sources-col">
+          <p class="how-col-label how-sources-label">Your accounts</p>
+          <div class="how-source-grid">
+            <div class="how-source-card">
+              <div class="how-source-logo" style="background:#117ACA">C</div>
+              <span class="how-source-name">Chase</span>
+            </div>
+            <div class="how-source-card">
+              <div class="how-source-logo" style="background:#CC0000">WF</div>
+              <span class="how-source-name">Wells Fargo</span>
+            </div>
+            <div class="how-source-card">
+              <div class="how-source-logo" style="background:#E31837">B</div>
+              <span class="how-source-name">Bank of America</span>
+            </div>
+            <div class="how-source-card">
+              <div class="how-source-logo" style="background:#2CA01C">QB</div>
+              <span class="how-source-name">QuickBooks</span>
+            </div>
+            <div class="how-source-card">
+              <div class="how-source-logo" style="background:#6772E5">S</div>
+              <span class="how-source-name">Stripe</span>
+            </div>
+            <div class="how-source-card">
+              <div class="how-source-logo" style="background:#6E1DC8">Z</div>
+              <span class="how-source-name">Zelle</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center: Hub with converging/diverging SVG lines -->
+        <div class="how-hub-col">
+          <svg class="how-lines" viewBox="0 0 60 300" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 50 C30 50 30 150 60 150" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M0 150 L60 150" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M0 250 C30 250 30 150 60 150" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4 3"/>
+          </svg>
+
+          <div class="how-hub-node-wrap">
+            <div class="how-hub-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <span class="how-hub-name">Rendi AI</span>
+          </div>
+
+          <svg class="how-lines" viewBox="0 0 60 300" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 150 C30 150 30 30 60 30" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M0 150 C30 150 30 90 60 90" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M0 150 L60 150" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M0 150 C30 150 30 210 60 210" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M0 150 C30 150 30 270 60 270" stroke="#e0e0e0" stroke-width="1.5" stroke-dasharray="4 3"/>
+          </svg>
+        </div>
+
+        <!-- Right: Activity feed -->
+        <div class="how-feed-col">
+          <p class="how-col-label how-feed-label">Rendi in action</p>
+          <div class="how-feed-list">
+            <div class="how-feed-item how-feed-active">
+              <div class="how-feed-dot how-dot-green"></div>
+              <div class="how-feed-content">
+                <span class="how-feed-title">Income tracked</span>
+                <span class="how-feed-sub">$3,200 · Henderson Roofing</span>
+              </div>
+              <span class="how-feed-badge">Rendi AI</span>
+            </div>
+            <div class="how-feed-item">
+              <div class="how-feed-dot how-dot-green"></div>
+              <div class="how-feed-content">
+                <span class="how-feed-title">Expense categorized</span>
+                <span class="how-feed-sub">Home Depot → Materials</span>
+              </div>
+            </div>
+            <div class="how-feed-item how-feed-active">
+              <div class="how-feed-dot how-dot-blue"></div>
+              <div class="how-feed-content">
+                <span class="how-feed-title">P&amp;L updated</span>
+                <span class="how-feed-sub">+$4,200 profit this month</span>
+              </div>
+              <span class="how-feed-badge">Live</span>
+            </div>
+            <div class="how-feed-item">
+              <div class="how-feed-dot how-dot-purple"></div>
+              <div class="how-feed-content">
+                <span class="how-feed-title">Job profit ready</span>
+                <span class="how-feed-sub">Cedar Deck: $1,800 net</span>
+              </div>
+              <span class="how-feed-badge">Job #47</span>
+            </div>
+            <div class="how-feed-item">
+              <div class="how-feed-dot how-dot-amber"></div>
+              <div class="how-feed-content">
+                <span class="how-feed-title">Tax estimate ready</span>
+                <span class="how-feed-sub">Set aside $847 for Q2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- Household Callout -->
   <section class="section-household">
@@ -471,7 +583,7 @@
   <section class="section-mission">
     <div class="mission-inner">
       <div class="mission-image-wrap">
-        <img src="img/deck-hero.jpg" alt="Contractor building a deck" class="mission-image" />
+        <img src="img/deck-hero.jpg" alt="Contractor building a deck" class="mission-image" loading="lazy" />
       </div>
       <div class="mission-overlay">
         <h2 class="mission-title">Your success is our mission.</h2>

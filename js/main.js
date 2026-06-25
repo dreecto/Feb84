@@ -9,8 +9,8 @@
   var translations = {
     es: {
       // Nav
-      navLink1: 'Cómo Funciona',
-      navLink2: 'Resultados',
+      navLink1: 'Funciones',
+      navLink2: 'Cómo Funciona',
       navLink3: 'Por Qué Nosotros',
       navLink4: 'Empezar',
       navCta: 'Acceso Anticipado',
@@ -77,14 +77,17 @@
       
       // How it works
       howLabel: 'Cómo Funciona',
-      howTitle: 'Empieza en minutos, califica para la tarjeta',
-      howSubtitle: 'Entre más usas la app, más rápido calificas para tu tarjeta de gasto al 0%.',
-      step1Title: 'Conecta tus cuentas',
-      step1Text: 'Vincula tus bancos, Stripe, Venmo y más con Plaid. Ve todos tus ingresos y gastos en un solo lugar.',
-      step2Title: 'Cotiza y cobra',
-      step2Text: 'Envía cotizaciones profesionales, actualiza change orders, y convierte a facturas. Tus clientes pagan en línea con Stripe.',
-      step3Title: 'Califica para la tarjeta',
-      step3Text: 'Mientras usas la app, construyes tu perfil. Califica para una tarjeta de gasto al 0% basada en tu flujo real.',
+      howTitle: 'Conecta una vez. Rendi hace el resto.',
+      howSubtitle: 'Vincula tu banco en menos de 2 minutos — Rendi AI registra ingresos, categoriza gastos y mantiene tus libros limpios automáticamente.',
+      howSourcesLabel: 'Tus cuentas',
+      howFeedLabel: 'Rendi en acción',
+      howFeed: [
+        { title: 'Ingreso registrado', sub: '$3,200 · Henderson Roofing' },
+        { title: 'Gasto categorizado', sub: 'Home Depot → Materiales' },
+        { title: 'P&L actualizado', sub: '+$4,200 de ganancia este mes' },
+        { title: 'Ganancia por trabajo', sub: 'Cubierta Cedar: $1,800 neto' },
+        { title: 'Estimado fiscal', sub: 'Aparta $847 para Q2' }
+      ],
       
       // Results
       resultsLabel: 'Resultados Reales',
@@ -143,8 +146,8 @@
       // Footer
       footerTagline: 'Claridad financiera para contratistas y sus familias. Disponible en inglés y español.',
       footerProduct: 'Producto',
-      footerProd1: 'Cómo Funciona',
-      footerProd2: 'Resultados',
+      footerProd1: 'Funciones',
+      footerProd2: 'Cómo Funciona',
       footerProd3: 'Rendi IA',
       footerCompany: 'Empresa',
       footerComp1: 'Por Qué Nosotros',
@@ -188,8 +191,8 @@
     },
     en: {
       // Nav
-      navLink1: 'How It Works',
-      navLink2: 'Results',
+      navLink1: 'Features',
+      navLink2: 'How It Works',
       navLink3: 'Why Us',
       navLink4: 'Get Started',
       navCta: 'Early Access',
@@ -256,14 +259,17 @@
       
       // How it works
       howLabel: 'How It Works',
-      howTitle: 'Start in minutes, qualify for the card',
-      howSubtitle: 'The more you use the app, the faster you qualify for your 0% spend card.',
-      step1Title: 'Connect your accounts',
-      step1Text: 'Link your banks, Stripe, Venmo and more with Plaid. See all your income and expenses in one place.',
-      step2Title: 'Quote and collect',
-      step2Text: 'Send professional quotes, update change orders, and convert to invoices. Your clients pay online with Stripe.',
-      step3Title: 'Qualify for the card',
-      step3Text: 'As you use the app, you build your profile. Qualify for a 0% spend card based on your real cash flow.',
+      howTitle: 'Connect once. Rendi handles everything.',
+      howSubtitle: 'Link your bank in under 2 minutes — Rendi AI tracks income, categorizes spending, and keeps your books clean automatically.',
+      howSourcesLabel: 'Your accounts',
+      howFeedLabel: 'Rendi in action',
+      howFeed: [
+        { title: 'Income tracked', sub: '$3,200 · Henderson Roofing' },
+        { title: 'Expense categorized', sub: 'Home Depot → Materials' },
+        { title: 'P&L updated', sub: '+$4,200 profit this month' },
+        { title: 'Job profit ready', sub: 'Cedar Deck: $1,800 net' },
+        { title: 'Tax estimate ready', sub: 'Set aside $847 for Q2' }
+      ],
       
       // Results
       resultsLabel: 'Real Results',
@@ -322,8 +328,8 @@
       // Footer
       footerTagline: 'Financial clarity for contractors and their families. Available in English and Spanish.',
       footerProduct: 'Product',
-      footerProd1: 'How It Works',
-      footerProd2: 'Results',
+      footerProd1: 'Features',
+      footerProd2: 'How It Works',
       footerProd3: 'Rendi AI',
       footerCompany: 'Company',
       footerComp1: 'Why Us',
@@ -843,6 +849,32 @@
       if (cDisclaimer) cDisclaimer.textContent = t.ctaDisclaimer;
     }
     
+    // How It Works
+    var howSection = document.getElementById('market');
+    if (howSection && t.howLabel) {
+      var howEyebrow = howSection.querySelector('.how-eyebrow');
+      var howHeading = howSection.querySelector('.how-heading');
+      var howSubEl = howSection.querySelector('.how-sub');
+      var howSrcLabel = howSection.querySelector('.how-sources-label');
+      var howFeedLabelEl = howSection.querySelector('.how-feed-label');
+      if (howEyebrow) howEyebrow.textContent = t.howLabel;
+      if (howHeading) howHeading.textContent = t.howTitle;
+      if (howSubEl) howSubEl.textContent = t.howSubtitle;
+      if (howSrcLabel && t.howSourcesLabel) howSrcLabel.textContent = t.howSourcesLabel;
+      if (howFeedLabelEl && t.howFeedLabel) howFeedLabelEl.textContent = t.howFeedLabel;
+      if (t.howFeed) {
+        var howFeedItems = howSection.querySelectorAll('.how-feed-item');
+        howFeedItems.forEach(function(item, i) {
+          if (t.howFeed[i]) {
+            var titleEl = item.querySelector('.how-feed-title');
+            var subEl = item.querySelector('.how-feed-sub');
+            if (titleEl) titleEl.textContent = t.howFeed[i].title;
+            if (subEl) subEl.textContent = t.howFeed[i].sub;
+          }
+        });
+      }
+    }
+
     // FAQ
     var faqSection = document.getElementById('faq');
     if (faqSection && t.faqLabel) {
