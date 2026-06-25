@@ -18,8 +18,8 @@
       // Hero
       heroSocialProof: 'El asistente financiero hecho para contratistas',
       heroLabel: 'Plataforma Financiera Segura',
-      heroTitle: 'Estás ganando bien. ¿Sabes a dónde va tu dinero?',
-      heroSubtitle: 'Sabe lo que tienes, lo que te deben, y lo que se viene — antes de que sea un problema.',
+      heroTitle: 'Tus finanzas, en piloto automático.',
+      heroSubtitle: 'Impulsado por Rendi AI — sabe lo que ganas, en qué gastas y cuánto ganas por trabajo.',
       heroCta1: 'Descargar App',
       heroCta2: 'Ver Cómo Funciona',
       heroPartnersLabel: 'Infraestructura Segura Impulsada Por',
@@ -50,9 +50,9 @@
       solution1Title: 'Banrendi funciona como tu asistente financiero de negocios.',
       solution1Text: 'Ganar dinero importa. Saber a dónde va importa igual.',
       solution1Feature1: '✅ Ingresos y gastos rastreados automáticamente',
-      solution1Feature2: '✅ Recibe alertas cuando algo no cuadra',
-      solution1Feature3: '',
-      solution1Feature4: '',
+      solution1Feature2: '✅ Gastos desglosados por categoría',
+      solution1Feature3: '✅ Pérdidas y Ganancias, siempre actualizado',
+      solution1Feature4: '✅ P&L por trabajo — ve cuáles trabajos son rentables',
 
       before: 'Antes',
       now: 'Ahora',
@@ -98,8 +98,8 @@
       
       // AI Chat
       aiLabel: 'Rendi IA',
-      aiTitle: 'Lo detectamos. Y si tienes una pregunta — solo pregunta.',
-      aiText: 'Recibe alertas cuando el flujo es bajo o es hora de cobrar. ¿Quieres saber más? Solo pregunta.',
+      aiTitle: 'Conoce a Rendi — tu IA que conoce tu negocio por dentro y por fuera',
+      aiText: 'Pregúntale a Rendi cualquier cosa sobre tus finanzas y obtén una respuesta clara en segundos. Te muestra la ganancia por trabajo, los gastos por categoría y aprende cómo categorizar tus transacciones a tu manera.',
       aiMobile: 'Móvil',
       aiWeb: 'Web',
       aiUserMsg: '¿Qué tan cerca estoy de mi meta de ingresos este mes?',
@@ -155,6 +155,18 @@
       footerLegal2: 'Términos de Servicio',
       footerCopy: '© 2026 Banrendi. Todos los derechos reservados.',
       
+      // FAQ
+      faqLabel: 'Preguntas Frecuentes',
+      faqTitle: 'Todo lo que necesitas saber',
+      faqItems: [
+        { q: '¿Están seguros mis datos financieros?', a: 'Tus datos están protegidos con encriptación de 256 bits — el mismo estándar que usan los bancos principales de EE.UU. Conectamos tus cuentas a través de Plaid, la red de datos financieros más confiable del país, usada por Chase, Wells Fargo y miles de apps. Nunca vemos ni guardamos tu contraseña bancaria.' },
+        { q: '¿Banrendi guarda mis credenciales bancarias?', a: 'Nunca. Tu usuario y contraseña del banco van directamente a Plaid — no a nosotros. Plaid es una empresa regulada y certificada SOC 2 que maneja millones de conexiones bancarias seguras en EE.UU. Solo recibimos acceso de solo lectura a tus transacciones.' },
+        { q: '¿Mi pareja también puede usar la app?', a: 'Sí. Muchos contratistas usan Banrendi con su pareja — quien maneje las finanzas del hogar puede entrar y ver exactamente lo que entra y lo que sale. Sin hojas de cálculo, sin esperar reportes. Solo una visión clara del negocio, en cualquier momento.' },
+        { q: '¿Qué hace exactamente Rendi AI?', a: 'Rendi es tu asistente financiero con IA integrado. Pregúntale lo que quieras — "¿Cuánto gané este mes?", "¿Cuál fue mi ganancia en el trabajo Henderson?", "¿En qué estoy gastando más?" — y obtén una respuesta real en segundos. También puedes decirle cómo categorizar una transacción y lo recuerda para el futuro.' },
+        { q: '¿Banrendi es realmente gratis?', a: 'Sí — gratis para descargar y usar. El plan premium desbloquea funciones avanzadas como P&L por trabajo, reglas de categorización con IA y reportes detallados, desde $37.99/mes. Sin cargos ocultos, sin contratos. Cancela cuando quieras.' },
+        { q: '¿Necesito saber de tecnología para usarlo?', a: 'Para nada. Si puedes enviar un mensaje de texto, puedes usar Banrendi. La mayoría de los contratistas están funcionando en menos de 5 minutos. Conecta tu banco y Rendi empieza a organizar tus finanzas automáticamente desde el primer día.' }
+      ],
+
       // Mission
       missionTitle: 'Nuestra misión es tu éxito',
       
@@ -185,8 +197,8 @@
       // Hero
       heroSocialProof: 'The financial assistant built for contractors',
       heroLabel: 'Secure Finance Platform',
-      heroTitle: 'You\'re making good money. Do you know where it\'s going?',
-      heroSubtitle: 'Know what you have, what you\'re owed, and what\'s coming — before it becomes a problem.',
+      heroTitle: 'Your finances, on autopilot.',
+      heroSubtitle: 'Powered by Rendi AI — know what you earn, where you spend, and how much you make per job.',
       heroCta1: 'Download App',
       heroCta2: 'See How It Works',
       heroPartnersLabel: 'Secure Infrastructure Powered By',
@@ -217,9 +229,9 @@
       solution1Title: 'Banrendi works like your business financial assistant',
       solution1Text: 'Making money matters. Knowing where it goes matters just as much.',
       solution1Feature1: '✅ Income and expenses tracked automatically',
-      solution1Feature2: '✅ Get notified when something looks off',
-      solution1Feature3: '',
-      solution1Feature4: '',
+      solution1Feature2: '✅ Spending breakdown by category',
+      solution1Feature3: '✅ Profit & Loss, always up to date',
+      solution1Feature4: '✅ P&L per job — see which jobs actually make money',
       
       before: 'Before',
       now: 'Now',
@@ -265,8 +277,8 @@
       
       // AI Chat
       aiLabel: 'Rendi AI',
-      aiTitle: 'We\'ll flag it. And if you have a question — ask it.',
-      aiText: 'Get alerted when cash flow looks tight or it\'s time to collect. Want to dig deeper? Just ask — answers in seconds.',
+      aiTitle: 'Meet Rendi — your AI that knows your business inside out',
+      aiText: 'Ask Rendi anything about your finances and get a plain-English answer in seconds. It shows you profit per job, tracks spending by category, and learns how to categorize your transactions the way you want — so your books stay clean without the extra work.',
       aiMobile: 'Mobile',
       aiWeb: 'Web',
       aiUserMsg: 'How much have I spent with Roofing Direct this year?',
@@ -322,6 +334,18 @@
       footerLegal2: 'Terms of Service',
       footerCopy: '© 2026 Banrendi. All rights reserved.',
       
+      // FAQ
+      faqLabel: 'Got Questions',
+      faqTitle: 'Everything you need to know',
+      faqItems: [
+        { q: 'Is my financial data safe?', a: 'Your data is protected with 256-bit bank-level encryption — the same standard used by major US banks. We connect your accounts through Plaid, the most trusted financial data network in the US, used by Chase, Wells Fargo, and thousands of apps. We never see or store your banking password.' },
+        { q: 'Does Banrendi store my bank login credentials?', a: 'Never. Your banking username and password go directly to Plaid — not to us. Plaid is a regulated, SOC 2 certified company that handles millions of secure bank connections across the US. We only receive read-only access to your transaction data.' },
+        { q: 'Can my partner or spouse also use the app?', a: 'Yes. Many contractors use Banrendi with their partner — whoever manages the finances can log in and see exactly what\'s coming in and going out. No spreadsheets, no waiting for reports. Just a clear picture of the business, anytime.' },
+        { q: 'What exactly does Rendi AI do?', a: 'Rendi is your built-in AI financial assistant. Ask it anything — "How much did I make this month?", "What was my profit on the Henderson job?", "Where am I spending the most?" — and get a real answer in seconds. You can also tell Rendi how to categorize a transaction and it remembers for the future.' },
+        { q: 'Is Banrendi really free to download?', a: 'Yes — free to download and use. The premium plan unlocks advanced features like per-job P&L, AI categorization rules, and detailed reports, starting at $37.99/month. No hidden fees, no contracts. Cancel anytime.' },
+        { q: 'Do I need to be tech-savvy to use it?', a: 'Not at all. If you can send a text message, you can use Banrendi. Most contractors are up and running in under 5 minutes. Connect your bank and Rendi starts organizing your finances automatically from day one.' }
+      ],
+
       // Mission
       missionTitle: 'Our mission is your success',
       
@@ -819,6 +843,26 @@
       if (cDisclaimer) cDisclaimer.textContent = t.ctaDisclaimer;
     }
     
+    // FAQ
+    var faqSection = document.getElementById('faq');
+    if (faqSection && t.faqLabel) {
+      var faqEyebrow = faqSection.querySelector('.faq-eyebrow');
+      var faqHeading = faqSection.querySelector('.faq-heading');
+      var faqItems = faqSection.querySelectorAll('.faq-item');
+      if (faqEyebrow) faqEyebrow.textContent = t.faqLabel;
+      if (faqHeading) faqHeading.textContent = t.faqTitle;
+      if (t.faqItems) {
+        faqItems.forEach(function(item, i) {
+          if (t.faqItems[i]) {
+            var q = item.querySelector('.faq-q');
+            var a = item.querySelector('.faq-a');
+            if (q) q.textContent = t.faqItems[i].q;
+            if (a) a.textContent = t.faqItems[i].a;
+          }
+        });
+      }
+    }
+
     // Mission
     var missionTitle = document.querySelector('.mission-title');
     if (missionTitle) missionTitle.textContent = t.missionTitle;
