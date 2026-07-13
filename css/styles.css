@@ -2267,6 +2267,219 @@ a.hero-rating-item:hover {
   margin-bottom: var(--space-xl);
 }
 
+/* ---------- How It Works Section ---------- */
+.section-how {
+  background-color: var(--color-white);
+}
+
+.how-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-13);
+  border-radius: var(--border-radius-lg);
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  overflow: hidden;
+  min-height: 360px;
+}
+
+.how-sources-col {
+  padding: var(--space-xl);
+  border-right: 1px solid var(--color-gray-13);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  justify-content: center;
+}
+
+.how-col-label {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-gray-30);
+  margin: 0;
+}
+
+.how-source-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.how-source-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-gray-03);
+  border: 1px solid var(--color-gray-13);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.how-source-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.02em;
+}
+
+.how-source-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-gray-75);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.how-hub-col {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.how-lines {
+  flex: 1;
+  min-width: 48px;
+  display: block;
+}
+
+.how-hub-node-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 4px;
+  flex-shrink: 0;
+}
+
+.how-hub-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 6px rgba(30, 64, 175, 0.08), 0 8px 20px rgba(30, 64, 175, 0.18);
+}
+
+.how-hub-name {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gray-55);
+  white-space: nowrap;
+}
+
+.how-feed-col {
+  padding: var(--space-xl);
+  border-left: 1px solid var(--color-gray-13);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  justify-content: center;
+}
+
+.how-feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.how-feed-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-gray-03);
+  border: 1px solid var(--color-gray-13);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.how-feed-item.how-feed-active {
+  border-color: #86efac;
+  background: #f0fdf4;
+}
+
+.how-feed-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.how-dot-green  { background: #22c55e; }
+.how-dot-blue   { background: #3b82f6; }
+.how-dot-purple { background: #8b5cf6; }
+.how-dot-amber  { background: #f59e0b; }
+
+.how-feed-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.how-feed-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-gray-90);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.how-feed-sub {
+  font-size: 11px;
+  color: var(--color-gray-55);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.how-feed-badge {
+  flex-shrink: 0;
+  background: var(--color-gray-90);
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .how-card {
+    grid-template-columns: 1fr;
+  }
+  .how-sources-col {
+    border-right: none;
+    border-bottom: 1px solid var(--color-gray-13);
+  }
+  .how-hub-col {
+    justify-content: center;
+    padding: var(--space-xl);
+    border-bottom: 1px solid var(--color-gray-13);
+  }
+  .how-lines {
+    display: none;
+  }
+  .how-feed-col {
+    border-left: none;
+  }
+}
+
 /* ---------- FAQ Section ---------- */
 .section-faq {
   background-color: var(--color-gray-03);
