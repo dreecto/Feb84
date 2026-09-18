@@ -175,6 +175,10 @@
 .onboarding-point b{display:block;font:600 21px/1.3 var(--serif);letter-spacing:-.01em}
 .onboarding-point span{display:block;margin-top:8px;color:var(--muted);font:450 15px/1.5 var(--sans)}
 
+
+/* v18d: center the WHY section as one unit */
+.onboarding-head{margin-left:auto;margin-right:auto;text-align:center}
+.onboarding-head p{max-width:580px;margin-left:auto;margin-right:auto}
 /* v18c: the WHY visual - the noise, then the peace */
 .story-flow{max-width:640px;margin:0 auto;padding:36px 26px 42px;border:1px solid rgba(18,65,53,.13);border-radius:30px;background:radial-gradient(circle at 50% 16%,#fafffd 0,#edf4ef 48%,#e4ece7 100%);display:flex;flex-direction:column;align-items:center}
 .story-tag{color:var(--muted);font:700 10px/1.2 var(--sans);letter-spacing:.12em}
@@ -349,7 +353,7 @@
 .numbers-tell{display:block!important}.numbers-tell .numbers-line{display:none!important}.numbers-tell>div>span{display:block;color:var(--green);font-size:11px;line-height:1.2;font-weight:800;letter-spacing:.12em;margin-bottom:10px}
 .single-live-phone{display:block!important;max-width:720px;margin:42px 0 0!important}.bubble-conversation{width:100%!important;height:auto!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;overflow:visible!important}.bubble-conversation:before{display:none!important}.bubble-head{display:flex;justify-content:flex-start;margin-bottom:18px}.bubble-head .example-pill{position:static!important;background:transparent;border-color:#9eb3a9;color:var(--green);font-size:9px;padding:6px 9px}.bubble-conversation .messages{min-height:235px!important;padding:0!important;background:transparent!important;justify-content:flex-end}.bubble-conversation .msg{font-size:17px!important;line-height:1.38!important;max-width:88%!important;padding:15px 18px!important;border-radius:24px!important;background:#fff!important;border:1px solid rgba(16,46,37,.1)!important;box-shadow:0 12px 28px rgba(16,33,28,.08)!important}.bubble-conversation .incoming{border-bottom-left-radius:7px!important}.bubble-conversation .accent-msg{background:#e7eee8!important}.bubble-conversation .typing-indicator{background:#fff!important;border:1px solid rgba(16,46,37,.1);box-shadow:0 8px 20px rgba(16,33,28,.06)}
 @media(max-width:680px){.single-live-phone{margin-top:30px!important}.bubble-conversation{width:100%!important;height:auto!important}.bubble-conversation .messages{min-height:225px!important}.bubble-conversation .msg{font-size:15px!important;max-width:94%!important;padding:13px 15px!important}}
-@media(prefers-reduced-motion:no-preference){.morning-lock .notice-group{opacity:0;transform:translateY(28px) scale(.96);filter:blur(3px)}.morning-lock.hero-notice-playing .notice-group{animation:heroNoticeIn .7s .75s cubic-bezier(.2,.8,.2,1) forwards}@keyframes heroNoticeIn{60%{opacity:1;transform:translateY(-4px) scale(1.01);filter:blur(0)}100%{opacity:1;transform:none;filter:blur(0)}}}
+@media(prefers-reduced-motion:no-preference){.morning-lock.hero-notice-playing .notice-group{animation:heroNoticeIn .7s .75s cubic-bezier(.2,.8,.2,1) both}@keyframes heroNoticeIn{0%{opacity:0;transform:translateY(28px) scale(.96);filter:blur(3px)}60%{opacity:1;transform:translateY(-4px) scale(1.01);filter:blur(0)}100%{opacity:1;transform:none;filter:blur(0)}}}
 
 /* v10: desktop rhythm, true logos, full Carlos phone, founder credibility */
 .plaidmark,.plaid-mini{display:none!important}.plaid-official{display:block;width:88px;height:auto}.mini-bank .plaid-official{width:78px}.node-logo{width:66px!important;max-height:30px;object-fit:contain}.rendi-node-logo{display:block;width:66px;height:30px;object-fit:contain}.rendi-node .rendi-icon{display:none}
